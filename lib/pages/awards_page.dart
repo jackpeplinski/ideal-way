@@ -1,99 +1,92 @@
 import 'package:flutter/material.dart';
-
+import '../widgets/award_page_widgets.dart';
 import '../widgets/main_drawer.dart';
+import '../models/user.dart';
 
 class AwardsPage extends StatefulWidget {
+  final User user;
   static const routeName = '/awardsPage';
+
+  AwardsPage(this.user);
 
   @override
   _AwardsPageState createState() => _AwardsPageState();
 }
 
 class _AwardsPageState extends State<AwardsPage> {
-  Widget awardTitle() {
-    return ListTile();
-  } //consider using methods to make code look cleaner
-
-  Widget awardName() {
-    return Container();
-  }
-
   @override
   Widget build(BuildContext context) {
     //could use to scale? double width = MediaQuery.of(context).size.width;
     return Scaffold(
-        drawer: MainDrawer(),
-        backgroundColor: Theme.of(context).backgroundColor,
-        appBar: AppBar(
-          title: Text("AWARDS"),
-          backgroundColor: Theme.of(context).primaryColor,
+      drawer: MainDrawer(),
+      backgroundColor: Theme.of(context).backgroundColor,
+      appBar: AppBar(
+        title: Text("Awards"),
+        backgroundColor: Theme.of(context).primaryColor,
+      ),
+      body: SingleChildScrollView(
+          child: Column(children: <Widget>[
+        Stack(
+          children: <Widget>[
+            awardBar(
+                "Level 1",
+                widget.user.award.confidence.opacity1,
+                "Level 2",
+                widget.user.award.confidence.opacity2,
+                "Level 3",
+                widget.user.award.confidence.opacity3),
+            awardName("Empathy"),
+          ],
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              Align(
-                alignment: Alignment.center,
-                child: AspectRatio(
-                  aspectRatio: 7,
-                  child: Card(
-                    color: Colors.orange,
-                    margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
-                    child: Center(
-                      child: Text(
-                        "Empathy",
-                        style: TextStyle(
-                          fontSize: 30,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.center,
-                child: AspectRatio(
-                  aspectRatio: 6,
-                  child: Padding(
-                    padding: EdgeInsets.all(0),
-                    child: Card(
-                      color: Colors.deepOrange[50],
-                      margin: EdgeInsets.symmetric(horizontal: 25),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          Column(
-                            children: <Widget>[
-                              Image.asset('assets/trophy.png', height: 50),
-                              Text("Level 1"),
-                            ],
-                          ),
-                          Column(
-                            children: <Widget>[
-                              Image.asset('assets/trophy.png', height: 50),
-                              Text("Level 2"),
-                            ],
-                          ),
-                          Column(
-                            children: <Widget>[
-                              Image.asset('assets/trophy.png', height: 50),
-                              Text(
-                                "Level 3",
-                                style: TextStyle(
-                                    //color: Colors.white,
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+        Stack(
+          children: <Widget>[
+            awardBar(
+                "Level 1",
+                widget.user.award.leadership.opacity1,
+                "Level 2",
+                widget.user.award.leadership.opacity2,
+                "Level 3",
+                widget.user.award.leadership.opacity3),
+            awardName("Leadership"),
+          ],
         ),
+        Stack(
+          children: <Widget>[
+            awardBar(
+                "Level 1",
+                widget.user.award.teamwork.opacity1,
+                "Level 2",
+                widget.user.award.teamwork.opacity2,
+                "Level 3",
+                widget.user.award.teamwork.opacity3),
+            awardName("Teamwork"),
+          ],
+        ),
+        Stack(
+          children: <Widget>[
+            awardBar(
+                "Level 1",
+                widget.user.award.confidence.opacity1,
+                "Level 2",
+                widget.user.award.confidence.opacity2,
+                "Level 3",
+                widget.user.award.confidence.opacity3),
+            awardName("Confidence"),
+          ],
+        ),
+        Stack(
+          children: <Widget>[
+            awardBar(
+                "Level 1",
+                widget.user.award.empathy.opacity1,
+                "Level 2",
+                widget.user.award.empathy.opacity2,
+                "Level 3",
+                widget.user.award.empathy.opacity3),
+            awardName("Empathy"),
+          ],
+        ),
+      ])),
     );
   }
 }

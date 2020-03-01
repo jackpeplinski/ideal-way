@@ -1,40 +1,92 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../widgets/main_drawer.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   static const routeName = '/homeScreen';
 
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
+  Widget selectCard(BuildContext context, String text, IconData icon) {
+    return Expanded(
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            child: Card(
+              margin: EdgeInsets.symmetric(vertical: 0, horizontal: 30),
+              elevation: 5.0,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25.0)),
+              color: Theme.of(context).primaryColor,
+              child: Padding(
+                padding: EdgeInsets.all(50.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      icon,
+                      size: 60.0,
+                    ),
+                    SizedBox(width: 20.0),
+                    Text(
+                      text,
+                      style: TextStyle(
+                        fontSize: 30.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
-        title: Text("Ideal Way"),
         backgroundColor: Theme.of(context).primaryColor,
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: Column(
         children: <Widget>[
-          Center(
-            child: FloatingActionButton(
-              heroTag: 'btn1',
-              onPressed: null,
-              child: Text("Single Player"),
+          Card(
+            margin: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
+            elevation: 5.0,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0)),
+            color: Theme.of(context).accentColor,
+            child: Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text(
+                "Welcome to Ideal Way",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 30.0,
+                  fontFamily: 'OxaniumBold',
+                  color: Colors.white,
+                ),
+              ),
             ),
           ),
-          Center(
-            child: FloatingActionButton(
-              heroTag: 'btn2',
-              onPressed: null,
-              child: Text("Multi Player"),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+              width: 250.0,
+              height: 250.0,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/idealWay.png'),
+                  fit: BoxFit.fill,
+                ),
+              ),
             ),
           ),
+          selectCard(context, "Singleplayer", MdiIcons.account),
+          selectCard(context, "Multiplayer", MdiIcons.accountMultiple),
+          SizedBox(height: 30.0),
         ],
       ),
       drawer: MainDrawer(),
