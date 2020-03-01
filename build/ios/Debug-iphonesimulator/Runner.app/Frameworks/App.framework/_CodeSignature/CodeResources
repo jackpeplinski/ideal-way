@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		GGcBS9RTUDZTv71G/eFJOlmj9J8=
+		32lESba7XJ60nCufOJq3gUjjy3M=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -23,6 +23,18 @@
 		<key>flutter_assets/assets/idealWay.png</key>
 		<data>
 		Ojozm/W9SVpGxy8isoFHB/Z27mc=
+		</data>
+		<key>flutter_assets/assets/kid1.jpg</key>
+		<data>
+		I822RW/HDhJ99JwF+pZL5O52334=
+		</data>
+		<key>flutter_assets/assets/kid2.jpg</key>
+		<data>
+		30sf2KOTXFUbwXIBedl5PyOskVA=
+		</data>
+		<key>flutter_assets/assets/kid3.jpg</key>
+		<data>
+		EzO+J5KduSpi29heSkAcq6li3Co=
 		</data>
 		<key>flutter_assets/assets/trophy.png</key>
 		<data>
@@ -46,7 +58,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		iZowqTknJ1e2k5U6B/kjLElu+DA=
+		tIMJOIkt13h4hyvVTq9QpqIpKmA=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -67,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GGcBS9RTUDZTv71G/eFJOlmj9J8=
+			32lESba7XJ60nCufOJq3gUjjy3M=
 			</data>
 			<key>hash2</key>
 			<data>
-			8bbxE8aV11giD9OfOb577ErE0G8GN5bXDDgSLr2V1mA=
+			34BtdScI08WGFxc4olou+KahupRxZ4Ik4+sFke8TvQM=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -105,6 +117,39 @@
 			<key>hash2</key>
 			<data>
 			38PPTNE8oE3kRX5hkUBwyJRlvzA/MFlwHrUgPyAFJg4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/kid1.jpg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I822RW/HDhJ99JwF+pZL5O52334=
+			</data>
+			<key>hash2</key>
+			<data>
+			sm9RHVVpE7uBFsxThIDp81mDLUPt0hgzgZfM3032bcM=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/kid2.jpg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			30sf2KOTXFUbwXIBedl5PyOskVA=
+			</data>
+			<key>hash2</key>
+			<data>
+			8RPrTd72qvPxOX03m8g9Vglpy+av7gnGyWHBzdz+SYo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/kid3.jpg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EzO+J5KduSpi29heSkAcq6li3Co=
+			</data>
+			<key>hash2</key>
+			<data>
+			HL+aqXaKcgKj4tqxwMM9WzOZOUhpW33dKKkCi83+GZ4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/trophy.png</key>
@@ -166,11 +211,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iZowqTknJ1e2k5U6B/kjLElu+DA=
+			tIMJOIkt13h4hyvVTq9QpqIpKmA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hIgbelu/ESZn0jRbkspcwBoZBVbi7ckrQOT7bm19ysc=
+			K4wTBaYiE1BEXJlWwNfv4e/1y3GoJuUiNB7ejfgt+CY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

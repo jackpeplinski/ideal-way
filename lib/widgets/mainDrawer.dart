@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../pages/awards_page.dart';
-import '../pages/home_screen.dart';
+import '../pages/awards.dart';
+import '../pages/home.dart';
 import '../pages/settings.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 

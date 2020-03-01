@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../widgets/award_page_widgets.dart';
-import '../widgets/main_drawer.dart';
+import '../widgets/awardsWidgets.dart';
+import '../widgets/mainDrawer.dart';
 import '../models/user.dart';
 
 class AwardsPage extends StatefulWidget {

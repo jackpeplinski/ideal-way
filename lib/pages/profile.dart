@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class PersonalInfo extends StatefulWidget {
+class Profile extends StatefulWidget {
   static const routeName = '/PersonalInfo';
 
   @override
-  _PersonalInfoState createState() => _PersonalInfoState();
+  _ProfileState createState() => _ProfileState();
 }
 
-class _PersonalInfoState extends State<PersonalInfo> {
+class _ProfileState extends State<Profile> {
   List<bool> switches = [
     false,
     false,

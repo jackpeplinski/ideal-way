@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import './pages/login.dart';
-import './pages/awards_page.dart';
-import './pages/home_screen.dart';
+import './pages/awards.dart';
+import './pages/home.dart';
 import './pages/settings.dart';
 import './pages/feedback.dart';
-import './pages/personal_info.dart';
+import './pages/profile.dart';
 
 import './models/user.dart';
 import './models/award_cateogry.dart';
@@ -126,7 +126,7 @@ class _HomeState extends State<Home> {
         HomeScreen.routeName : (ctx) => HomeScreen(),
         Settings.routeName : (ctx) => Settings(),
         FeedbackPage.routeName : (ctx) => FeedbackPage(),
-        PersonalInfo.routeName : (ctx) => PersonalInfo(),
+        Profile.routeName : (ctx) => Profile(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(

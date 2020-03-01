@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../widgets/main_drawer.dart';
+import '../widgets/mainDrawer.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import './feedback.dart';
-import './personal_info.dart';
+import './profile.dart';
 
 class Settings extends StatelessWidget {
   static const routeName = './Settings';
@@ -79,7 +79,7 @@ class Settings extends StatelessWidget {
               MdiIcons.accountCircle,
               "Adjust your information!",
               () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => PersonalInfo()))),
+                  builder: (BuildContext context) => Profile()))),
           settingsCard(
             context,
             MdiIcons.logout,
