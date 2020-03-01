@@ -2,22 +2,30 @@ import 'package:flutter/material.dart';
 
 import '../pages/awards_page.dart';
 import '../pages/home_screen.dart';
+import '../pages/settings.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class MainDrawer extends StatelessWidget {
-  Widget buildListTile(String title, IconData icon, Function tapHandler) {
+  Widget buildListTile(BuildContext context, String title, IconData icon, Function tapHandler) {
     return ListTile(
       leading: Icon(
         icon,
+        color: Theme.of(context).primaryColor,
         size: 26.0,
       ),
-      title: Text(title,),
+      title: Text(
+        title,
+        style: TextStyle(
+          color: Theme.of(context).primaryColor,
+          fontFamily: "OxaniumBold"
+        ),
+      ),
       onTap: tapHandler,
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    print("EFINOIN");
     return Drawer(
       child: Column(
         children: <Widget>[
@@ -27,10 +35,15 @@ class MainDrawer extends StatelessWidget {
             padding: EdgeInsets.all(20.0),
             alignment: Alignment.centerLeft,
             color: Theme.of(context).accentColor,
-            child: Text(
-              "IDEAL WAY!",
-              style: TextStyle(
-                color: Theme.of(context).primaryColor,
+            child: Container(
+              padding: EdgeInsets.fromLTRB(10, 20, 20, 0),
+              child: Text(
+                "IDEAL WAY",
+                style: TextStyle(
+                  color: Theme.of(context).primaryColor,
+                  fontFamily: "OxaniumBold",
+                  fontSize: 40.0,
+                ),
               ),
             ),
           ),
@@ -38,14 +51,25 @@ class MainDrawer extends StatelessWidget {
             height: 20.0,
           ),
           buildListTile(
-            "Awards",
-            Icons.cake,
-            () => Navigator.of(context).pushReplacementNamed(AwardsPage.routeName),
-          ),
-          buildListTile(
+            context,
             "Home Screen",
             Icons.home,
-            () => Navigator.of(context).pushReplacementNamed(HomeScreen.routeName),
+            () => Navigator.of(context)
+                .pushReplacementNamed(HomeScreen.routeName),
+          ),
+          buildListTile(
+            context,
+            "Awards",
+            MdiIcons.medal,
+            () => Navigator.of(context)
+                .pushReplacementNamed(AwardsPage.routeName),
+          ),
+          buildListTile(
+            context,
+            "Settings",
+            Icons.settings,
+            () => Navigator.of(context)
+                .pushReplacementNamed(Settings.routeName),
           ),
         ],
       ),

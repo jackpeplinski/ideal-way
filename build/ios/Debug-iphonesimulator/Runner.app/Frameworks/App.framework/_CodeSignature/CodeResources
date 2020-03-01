@@ -10,15 +10,19 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		Df7iTB0YqY8OzJCzPSTxgeDwInQ=
+		GGcBS9RTUDZTv71G/eFJOlmj9J8=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
-		lILml1/Dm8FIsisqu4EM3Kg929Q=
+		rlcPdRjhyNT7OURy7NK0lc8AtSI=
 		</data>
 		<key>flutter_assets/LICENSE</key>
 		<data>
-		TTHkJne5daZ4JC4nENS/OYDJU5I=
+		+TMpDJqrTycGfWqJtT2Gs7GlPvo=
+		</data>
+		<key>flutter_assets/assets/idealWay.png</key>
+		<data>
+		Ojozm/W9SVpGxy8isoFHB/Z27mc=
 		</data>
 		<key>flutter_assets/assets/trophy.png</key>
 		<data>
@@ -28,17 +32,29 @@
 		<data>
 		nIzDzw7hjOThppiX5OleKNAxtqM=
 		</data>
+		<key>flutter_assets/fonts/Oxanium-ExtraBold.ttf</key>
+		<data>
+		mxWBCEFKbRsIFh4uDCaW43UV9RU=
+		</data>
+		<key>flutter_assets/fonts/Oxanium-ExtraLight.ttf</key>
+		<data>
+		EiodAE6frkCIaaFS/KFfjGRoCgg=
+		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
 		Z2ICrHK+jrge57+K8dZOkuVFwKY=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		4fCSf14SM/aFfut1wEaSVT5FFGg=
+		iZowqTknJ1e2k5U6B/kjLElu+DA=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		TdRNbRcrlXQQgeiweLFizPmk92g=
+		</data>
+		<key>flutter_assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf</key>
+		<data>
+		gfBSpBZtzat4JAPS+qVWCMeeJ+8=
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
@@ -51,33 +67,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Df7iTB0YqY8OzJCzPSTxgeDwInQ=
+			GGcBS9RTUDZTv71G/eFJOlmj9J8=
 			</data>
 			<key>hash2</key>
 			<data>
-			KBm9ddIvg3FDn4ZM2GW0UYNkPOoRC38UKnxwvrLbopo=
+			8bbxE8aV11giD9OfOb577ErE0G8GN5bXDDgSLr2V1mA=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lILml1/Dm8FIsisqu4EM3Kg929Q=
+			rlcPdRjhyNT7OURy7NK0lc8AtSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YwkPE2N7k/su9XjVFpdeoUy7GFY9DEY+G4h3aEyC1dg=
+			e3TCGcjTJblI22H8jc7wDGZWzbHpdWW/fyJM3m1Bujw=
 			</data>
 		</dict>
 		<key>flutter_assets/LICENSE</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TTHkJne5daZ4JC4nENS/OYDJU5I=
+			+TMpDJqrTycGfWqJtT2Gs7GlPvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			dGUw7X6d/8XEtf1sOAI5m8uTDqw16FPLyawaGj5YO/g=
+			Ygbxsn3Br3qrOiy2fX9ooAuHYaIsaYYMwuIaX5gz1f4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/idealWay.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ojozm/W9SVpGxy8isoFHB/Z27mc=
+			</data>
+			<key>hash2</key>
+			<data>
+			38PPTNE8oE3kRX5hkUBwyJRlvzA/MFlwHrUgPyAFJg4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/trophy.png</key>
@@ -102,6 +129,28 @@
 			Wuh7JiGdsCj8cMnXMpa8jtW4ekzRz359zPE0NyQ7iRE=
 			</data>
 		</dict>
+		<key>flutter_assets/fonts/Oxanium-ExtraBold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mxWBCEFKbRsIFh4uDCaW43UV9RU=
+			</data>
+			<key>hash2</key>
+			<data>
+			YB5WM7DJsRuL1zrUeSWshHTNmB7FBhP+FVP1uUpsCTY=
+			</data>
+		</dict>
+		<key>flutter_assets/fonts/Oxanium-ExtraLight.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EiodAE6frkCIaaFS/KFfjGRoCgg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ymqw6q/ucCNHRMB09X/Zu8OIyVKIPnW5j2Z4X2bHyqU=
+			</data>
+		</dict>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<dict>
 			<key>hash</key>
@@ -117,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4fCSf14SM/aFfut1wEaSVT5FFGg=
+			iZowqTknJ1e2k5U6B/kjLElu+DA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fSNOPiGF9knA4jfv8gJV1OEWqK6TjbHJgLgB51PtSWo=
+			hIgbelu/ESZn0jRbkspcwBoZBVbi7ckrQOT7bm19ysc=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -133,6 +182,17 @@
 			<key>hash2</key>
 			<data>
 			d6fK2iHuml40zu1xSV3HnoE9PVFhQREGOzVfduySSBY=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gfBSpBZtzat4JAPS+qVWCMeeJ+8=
+			</data>
+			<key>hash2</key>
+			<data>
+			7SNTfaLMGS27zUnHRArnkYRTtBHdx+WzymfUIou7sG8=
 			</data>
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>
