@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-
 import '../widgets/mainDrawer.dart';
+import 'games.dart';
 
 class HomeScreen extends StatelessWidget {
   static const routeName = '/homeScreen';
 
   Widget selectCard(BuildContext context, String text, IconData icon) {
-    return Expanded(
+    return Container(
       child: Row(
         children: <Widget>[
           Expanded(
@@ -70,22 +70,32 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
-            child: Container(
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
-              width: 250.0,
-              height: 250.0,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/idealWay.png'),
-                  fit: BoxFit.fill,
-                ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+            width: 250.0,
+            height: 250.0,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/idealWay.png'),
+                fit: BoxFit.fill,
               ),
             ),
           ),
-          selectCard(context, "Singleplayer", MdiIcons.account),
-          selectCard(context, "Multiplayer", MdiIcons.accountMultiple),
+          GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Games()));
+              },
+              child: selectCard(context, "Singleplayer", MdiIcons.account)),
+          SizedBox(height: 20.0),
+          GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Games()));
+              },
+              child:
+                  selectCard(context, "Multiplayer", MdiIcons.accountMultiple)),
           SizedBox(height: 30.0),
         ],
       ),

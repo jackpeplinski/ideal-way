@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/awardsWidgets.dart';
+import 'package:ideal_way/widgets/barWidgets.dart';
 import '../widgets/mainDrawer.dart';
 import '../models/user.dart';
 
@@ -28,62 +28,92 @@ class _AwardsPageState extends State<AwardsPage> {
           child: Column(children: <Widget>[
         Stack(
           children: <Widget>[
-            awardBar(
+            backgroundBar(
                 "Level 1",
                 widget.user.award.confidence.opacity1,
+                'assets/trophy.png',
+                50,
                 "Level 2",
                 widget.user.award.confidence.opacity2,
+                'assets/trophy.png',
+                50,
                 "Level 3",
-                widget.user.award.confidence.opacity3),
-            awardName("Empathy"),
+                widget.user.award.confidence.opacity3,
+                'assets/trophy.png',
+                50),
+            titleBar("Empathy"),
           ],
         ),
         Stack(
           children: <Widget>[
-            awardBar(
+            backgroundBar(
                 "Level 1",
                 widget.user.award.leadership.opacity1,
+                'assets/trophy.png',
+                50,
                 "Level 2",
                 widget.user.award.leadership.opacity2,
+                'assets/trophy.png',
+                50,
                 "Level 3",
-                widget.user.award.leadership.opacity3),
-            awardName("Leadership"),
+                widget.user.award.leadership.opacity3,
+                'assets/trophy.png',
+                50),
+            titleBar("Leadership"),
           ],
         ),
         Stack(
           children: <Widget>[
-            awardBar(
+            backgroundBar(
                 "Level 1",
                 widget.user.award.teamwork.opacity1,
+                'assets/trophy.png',
+                50,
                 "Level 2",
                 widget.user.award.teamwork.opacity2,
+                'assets/trophy.png',
+                50,
                 "Level 3",
-                widget.user.award.teamwork.opacity3),
-            awardName("Teamwork"),
+                widget.user.award.teamwork.opacity3,
+                'assets/trophy.png',
+                50),
+            titleBar("Teamwork"),
           ],
         ),
         Stack(
           children: <Widget>[
-            awardBar(
+            backgroundBar(
                 "Level 1",
                 widget.user.award.confidence.opacity1,
+                'assets/trophy.png',
+                50,
                 "Level 2",
                 widget.user.award.confidence.opacity2,
+                'assets/trophy.png',
+                50,
                 "Level 3",
-                widget.user.award.confidence.opacity3),
-            awardName("Confidence"),
+                widget.user.award.confidence.opacity3,
+                'assets/trophy.png',
+                50),
+            titleBar("Confidence"),
           ],
         ),
         Stack(
           children: <Widget>[
-            awardBar(
+            backgroundBar(
                 "Level 1",
                 widget.user.award.empathy.opacity1,
+                'assets/trophy.png',
+                50,
                 "Level 2",
                 widget.user.award.empathy.opacity2,
+                'assets/trophy.png',
+                50,
                 "Level 3",
-                widget.user.award.empathy.opacity3),
-            awardName("Empathy"),
+                widget.user.award.empathy.opacity3,
+                'assets/trophy.png',
+                50),
+            titleBar("Empathy"),
           ],
         ),
       ])),

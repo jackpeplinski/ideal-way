@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-//TROPHY + TEXT creates
-Widget awardIcon(String levelText, double setOpacity) {
+//TROPHY + TEXTUNDERNEATH creates
+Widget iconBar(String levelText, double setOpacity, String imageLink, double height) {
+  //'assets/trophy.png'
   return Opacity(
     opacity: setOpacity,
     child: Column(
       children: <Widget>[
-        Image.asset('assets/trophy.png', height: 50),
+        Image.asset(imageLink, height: height),
         Text(levelText),
       ],
     ),
@@ -14,13 +15,19 @@ Widget awardIcon(String levelText, double setOpacity) {
 }
 
 //BACKGROUND BAR creates
-Widget awardBar(
+Widget backgroundBar(
   String levelText1,
   double setOpacity1,
+  String imageLink1,
+  double height1,
   String levelText2,
   double setOpacity2,
+  String imageLink2,
+  double height2,
   String levelText3,
   double setOpacity3,
+  String imageLink3,
+  double height3,
 ) {
   return Align(
     alignment: Alignment.center,
@@ -32,9 +39,9 @@ Widget awardBar(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            awardIcon(levelText1, setOpacity1),
-            awardIcon(levelText2, setOpacity2),
-            awardIcon(levelText3, setOpacity3),
+            iconBar(levelText1, setOpacity1, imageLink1, height1),
+            iconBar(levelText2, setOpacity2, imageLink2, height2),
+            iconBar(levelText3, setOpacity3, imageLink3, height3),
           ],
         ),
       ),
@@ -43,7 +50,7 @@ Widget awardBar(
 }
 
 //TITLE creates
-Widget awardName(String text) {
+Widget titleBar(String text) {
   return Align(
     alignment: Alignment.center,
     child: AspectRatio(

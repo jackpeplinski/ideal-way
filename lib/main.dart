@@ -32,8 +32,8 @@ class _HomeState extends State<Home> {
       teamwork: Awards(),
       ),
     );
-
-  void _award(String award, String level){
+//what's with bar?
+  void _bar(String award, String level){
     setState(() {
       if(award == "confidence"){
         if(user.award.confidence.level1 == level){
