@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
         accentColor: Colors.blue[200],
         primarySwatch: Colors.orange,
         backgroundColor: Colors.teal[50],
-        fontFamily: 'Oxanium',
+        fontFamily: 'Open Sans',
       ),
       routes:{
         '/' : (ctx) => Login(),

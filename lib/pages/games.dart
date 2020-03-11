@@ -31,7 +31,7 @@ class Games extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EmojiGame()));
+                                builder: (context) => EmojiGame1()));
                       },
                     ),
                     iconBar("Medium", 1, 'assets/SurveyLv2.png', 100),
