@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ideal_way/pages/games.dart';
 import 'package:ideal_way/widgets/mainDrawer.dart';
 
 Widget questionBar(String text) {
@@ -68,13 +69,13 @@ Widget choicesGrid(
           context,
           selection3,
           () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) => nextPage1)),
+              MaterialPageRoute(builder: (BuildContext context) => nextPage3)),
         ),
         choiceIcon(
           context,
           selection4,
           () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) => nextPage2)),
+              MaterialPageRoute(builder: (BuildContext context) => nextPage4)),
         )
       ],
     ),
@@ -115,7 +116,8 @@ Widget gameScreen(
   );
 }
 
-Widget incorrectAnswer(BuildContext context, String imageLink, String errorMessage) {
+Widget incorrectAnswer(
+    BuildContext context, String imageLink, String errorMessage) {
   return Scaffold(
     drawer: MainDrawer(),
     backgroundColor: Theme.of(context).backgroundColor,
@@ -131,8 +133,7 @@ Widget incorrectAnswer(BuildContext context, String imageLink, String errorMessa
           width: 300,
         ),
         Center(
-            child: questionBar(
-                "What emotion is this person most likely feeling?")),
+            child: questionBar("Answer incorrect. Review the message below.")),
         Expanded(
           child: GestureDetector(
             //onTap: tapGameHandler,
@@ -144,10 +145,71 @@ Widget incorrectAnswer(BuildContext context, String imageLink, String errorMessa
                   errorMessage,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 15,
                     color: Colors.white,
                   ),
                 ),
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: () => Navigator.pop(context),
+          child: Card(
+            color: Colors.orange,
+            child: Padding(
+              padding: EdgeInsets.all(30),
+              child: Text(
+                "Return",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30, color: Colors.white),
+              ),
+            ),
+          ),
+        )
+      ],
+    ),
+  );
+}
+
+Widget presentAward(BuildContext context, String imageLink, String awardLink) {
+  return Scaffold(
+    drawer: MainDrawer(),
+    backgroundColor: Theme.of(context).backgroundColor,
+    appBar: AppBar(
+      title: Text("Emoji Game"),
+      backgroundColor: Theme.of(context).primaryColor,
+    ),
+    body: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Image.asset(
+          imageLink,
+          width: 300,
+        ),
+        Center(child: questionBar("Answer correct! You earned a award.")),
+        Expanded(
+          child: GestureDetector(
+            child: Card(
+              color: Colors.deepOrange[50],
+              child: Padding(
+                  padding: EdgeInsets.all(60), child: Image.asset(awardLink)),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Games()));
+          },
+          child: Card(
+            color: Colors.orange,
+            child: Padding(
+              padding: EdgeInsets.all(30),
+              child: Text(
+                "Games Page",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30, color: Colors.white),
               ),
             ),
           ),

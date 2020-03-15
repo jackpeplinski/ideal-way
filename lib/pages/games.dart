@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ideal_way/pages/emojiGame.dart';
 import 'package:ideal_way/widgets/barWidgets.dart';
 import 'package:ideal_way/widgets/mainDrawer.dart';
+import 'emojiGame/emojiGameEasy.dart';
+import 'emojiGame/emojiGameMedium.dart';
 
 class Games extends StatelessWidget {
   @override
@@ -26,16 +27,33 @@ class Games extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     GestureDetector(
-                      child: iconBar("Easy", 1, 'assets/SurveyLv1.png', 100),
+                      child: iconInBar("Easy", 1, 'assets/SurveyLv1.png', 100),
                       onTap: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EmojiGame1()));
+                                builder: (context) => EmojiGameEasy1()));
                       },
                     ),
-                    iconBar("Medium", 1, 'assets/SurveyLv2.png', 100),
-                    iconBar("Difficult", 1, 'assets/SurveyLv3.png', 100),
+                    GestureDetector(
+                      child: iconInBar("Medium", 1, 'assets/SurveyLv2.png', 100),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => EmojiGameMedium1()));
+                      },
+                    ),
+                    GestureDetector(
+                      child:
+                          iconInBar("Difficult", 1, 'assets/SurveyLv3.png', 100),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => EmojiGameMedium1()));
+                      },
+                    ),
                   ],
                 ),
               ),

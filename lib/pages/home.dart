@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ideal_way/pages/comingSoon.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import '../widgets/mainDrawer.dart';
 import 'games.dart';
@@ -64,7 +65,6 @@ class HomeScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 30.0,
-                  fontFamily: 'OxaniumBold',
                   color: Colors.white,
                 ),
               ),
@@ -92,7 +92,7 @@ class HomeScreen extends StatelessWidget {
           GestureDetector(
               onTap: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Games()));
+                    context, MaterialPageRoute(builder: (context) => ComingSoon()));
               },
               child:
                   selectCard(context, "Multiplayer", MdiIcons.accountMultiple)),

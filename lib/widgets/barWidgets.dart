@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //TROPHY + TEXTUNDERNEATH creates
-Widget iconBar(String levelText, double setOpacity, String imageLink, double height) {
+Widget iconInBar(String levelText, double setOpacity, String imageLink, double height) {
   //'assets/trophy.png'
   return Opacity(
     opacity: setOpacity,
@@ -39,9 +39,9 @@ Widget backgroundBar(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            iconBar(levelText1, setOpacity1, imageLink1, height1),
-            iconBar(levelText2, setOpacity2, imageLink2, height2),
-            iconBar(levelText3, setOpacity3, imageLink3, height3),
+            iconInBar(levelText1, setOpacity1, imageLink1, height1),
+            iconInBar(levelText2, setOpacity2, imageLink2, height2),
+            iconInBar(levelText3, setOpacity3, imageLink3, height3),
           ],
         ),
       ),
