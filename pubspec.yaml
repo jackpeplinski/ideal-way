@@ -31,7 +31,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -61,14 +60,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Oxanium
-      fonts:
-        - asset: fonts/Oxanium-ExtraLight.ttf
-        - weight: 200
-    - family: OxaniumBold
-      fonts:
-        - asset: fonts/Oxanium-ExtraBold.ttf
-        - weight: 800
+    - family: Kanit
+      fonts: 
+      - asset: fonts/Kanit-Black.ttf
+      - asset: fonts/Kanit-Regular.ttf
+      - asset: fonts/Kanit-Thin.ttf
         
   #
   # For details regarding fonts from package dependencies,

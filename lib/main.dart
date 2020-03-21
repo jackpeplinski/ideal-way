@@ -40,70 +40,70 @@ class _HomeState extends State<Home> {
           user.award.confidence.opacity1 = 1;
         }
         if(user.award.confidence.level2 == level){
-          user.award.confidence.opacity2 = 2;
+          user.award.confidence.opacity2 = 1;
         }
         if(user.award.confidence.level3 == level){
-          user.award.confidence.opacity3 = 3;
+          user.award.confidence.opacity3 = 1;
         }
       }else if(award == "empathy"){
         if(user.award.empathy.level1 == level){
           user.award.empathy.opacity1 = 1;
         }
         if(user.award.empathy.level2 == level){
-          user.award.empathy.opacity2 = 2;
+          user.award.empathy.opacity2 = 1;
         }
         if(user.award.empathy.level3 == level){
-          user.award.empathy.opacity3 = 3;
+          user.award.empathy.opacity3 = 1;
         }
       }else if(award == "empowerment"){
         if(user.award.empowerment.level1 == level){
           user.award.empowerment.opacity1 = 1;
         }
         if(user.award.empowerment.level2 == level){
-          user.award.empowerment.opacity2 = 2;
+          user.award.empowerment.opacity2 = 1;
         }
         if(user.award.empowerment.level3 == level){
-          user.award.empowerment.opacity3 = 3;
+          user.award.empowerment.opacity3 = 1;
         }
       }else if(award == "inclusion"){
         if(user.award.inclusion.level1 == level){
           user.award.inclusion.opacity1 = 1;
         }
         if(user.award.inclusion.level2 == level){
-          user.award.inclusion.opacity2 = 2;
+          user.award.inclusion.opacity2 = 1;
         }
         if(user.award.inclusion.level3 == level){
-          user.award.inclusion.opacity3 = 3;
+          user.award.inclusion.opacity3 = 1;
         }
       }else if(award == "leadership"){
         if(user.award.leadership.level1 == level){
           user.award.leadership.opacity1 = 1;
         }
         if(user.award.leadership.level2 == level){
-          user.award.leadership.opacity2 = 2;
+          user.award.leadership.opacity2 = 1;
         }
         if(user.award.leadership.level3 == level){
-          user.award.leadership.opacity3 = 3;
+          user.award.leadership.opacity3 = 1;
         }
       }else if(award == "socailResponsibility"){
         if(user.award.socialResponsibility.level1 == level){
           user.award.socialResponsibility.opacity1 = 1;
         }
         if(user.award.socialResponsibility.level2 == level){
-          user.award.socialResponsibility.opacity2 = 2;
+          user.award.socialResponsibility.opacity2 = 1;
         }
         if(user.award.socialResponsibility.level3 == level){
-          user.award.socialResponsibility.opacity3 = 3;
+          user.award.socialResponsibility.opacity3 = 1;
         }
       }else if(award == "teamwork"){
         if(user.award.teamwork.level1 == level){
           user.award.teamwork.opacity1 = 1;
         }
         if(user.award.teamwork.level2 == level){
-          user.award.teamwork.opacity2 = 2;
+          user.award.teamwork.opacity2 = 1;
         }
         if(user.award.teamwork.level3 == level){
-          user.award.teamwork.opacity3 = 3;
+          user.award.teamwork.opacity3 = 1;
         }
       }
     });
@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
         accentColor: Colors.blue[200],
         primarySwatch: Colors.orange,
         backgroundColor: Colors.teal[50],
-        fontFamily: 'Open Sans',
+        fontFamily: 'Kanit',
       ),
       routes:{
         '/' : (ctx) => Login(),
