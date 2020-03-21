@@ -82,7 +82,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		F30Vcnzim6pJEZpv0ObCP+NhKAg=
+		lqtIDXqvRsTayfjeZCDg8pb+9E0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
 		<data>
@@ -322,19 +322,19 @@
 		</data>
 		<key>Frameworks/url_launcher.framework/Info.plist</key>
 		<data>
-		hzO63kt7y+FCpPG4pmHkZN4fYK0=
+		AVK+Xwvr/rZhSOgaZDv9tx+Twy0=
 		</data>
 		<key>Frameworks/url_launcher.framework/_CodeSignature/CodeResources</key>
 		<data>
-		XUUWjaYqrOSt+fyIpRQLFvuVMl0=
+		M7E6RGZ+LrmdrCtUew5oqLWA6Og=
 		</data>
 		<key>Frameworks/url_launcher.framework/url_launcher</key>
 		<data>
-		opXvcgHX6EHGuhn+s6UChONgDs0=
+		VKrP2knkF6QU7Eir9ykQCXCRfeM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RSbJbj/E4+1NHVMWRCGUUVAyzhs=
+		tSEVlZqtgLdS+0xf6zlIPH9N1Rk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -556,11 +556,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F30Vcnzim6pJEZpv0ObCP+NhKAg=
+			lqtIDXqvRsTayfjeZCDg8pb+9E0=
 			</data>
 			<key>hash2</key>
 			<data>
-			IOShGbAw+S/LcZ+68lQ3k0sm/BgnAg50GmfwORJMi8o=
+			oCnVPgjtULp9n9oe06HI+NAMqGvSMjqugOEnyVr1kU4=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib</key>
@@ -1216,33 +1216,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hzO63kt7y+FCpPG4pmHkZN4fYK0=
+			AVK+Xwvr/rZhSOgaZDv9tx+Twy0=
 			</data>
 			<key>hash2</key>
 			<data>
-			R8koiVhLSdW2KXhZfx4S4hNb/H9EAS1+UeAZyR1pFFE=
+			s9IV7bQoB8imwGcu7lbk9LwTfdrzZd8BCDQF2UrrCOw=
 			</data>
 		</dict>
 		<key>Frameworks/url_launcher.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XUUWjaYqrOSt+fyIpRQLFvuVMl0=
+			M7E6RGZ+LrmdrCtUew5oqLWA6Og=
 			</data>
 			<key>hash2</key>
 			<data>
-			+D1oupBIsb2QKTbK0lyiccYDSWJwFZEJ2GulYYmuRt0=
+			+wEz98r/I6C6kDNgG9Q/y/N328wZFvcjCkeRGgzJi+c=
 			</data>
 		</dict>
 		<key>Frameworks/url_launcher.framework/url_launcher</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			opXvcgHX6EHGuhn+s6UChONgDs0=
+			VKrP2knkF6QU7Eir9ykQCXCRfeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			hq8c1yO8AalAELuvQ4u3V661TyUFUyYv147W9ArURxs=
+			WsWMm585T8QpF4RSkIIURAQjHqA3/axukQbaUPf8FLY=
 			</data>
 		</dict>
 	</dict>

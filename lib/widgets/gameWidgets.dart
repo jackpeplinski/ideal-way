@@ -106,6 +106,7 @@ Widget gameScreen(
           Image.asset(
             imageLocation,
             width: 300,
+            height: 400,
           ),
           Center(
               child: questionBar(
@@ -131,6 +132,7 @@ Widget incorrectAnswer(
         Image.asset(
           imageLink,
           width: 300,
+          height: 400,
         ),
         Center(
             child: questionBar("Answer incorrect. Review the message below.")),
@@ -186,6 +188,7 @@ Widget presentAward(BuildContext context, String imageLink, String awardLink) {
         Image.asset(
           imageLink,
           width: 300,
+          height: 400,
         ),
         Center(child: questionBar("Answer correct! You earned a award.")),
         Expanded(

@@ -88,7 +88,7 @@ class _EmojiGameEasy3State extends State<EmojiGameEasy3> {
   Widget build(BuildContext context) {
     return gameScreen(
       context,
-      'emotions0-3.jpg',
+      'assets/emotions0-3.jpg',
       "Surprise",
       "Disgust",
       "Fear",
@@ -110,7 +110,7 @@ class IncorrectEmojiGameEasy3 extends StatefulWidget {
 class _IncorrectEmojiGameEasy3State extends State<IncorrectEmojiGameEasy3> {
   @override
   Widget build(BuildContext context) {
-    return incorrectAnswer(context, 'emotions0-3.jpg',
+    return incorrectAnswer(context, 'assets/emotions0-3.jpg',
         "When someone is ___, they will tend to open their mouth and eyes widely, and raise their eyebrows. It may also include movements like jumping back, and verbal outbursts such as yelling, screaming, or gasping.");
   }
 }
@@ -123,6 +123,6 @@ class CorrectEmojiGameEasy3 extends StatefulWidget {
 class _CorrectEmojiGameEasy3State extends State<CorrectEmojiGameEasy3> {
   @override
   Widget build(BuildContext context) {
-    return presentAward(context, 'emotions0-3.jpg', 'assets/trophy.png');
+    return presentAward(context, 'assets/emotions0-3.jpg', 'assets/trophy.png');
   }
 }

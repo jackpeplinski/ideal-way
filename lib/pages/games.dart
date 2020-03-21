@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ideal_way/widgets/barWidgets.dart';
 import 'package:ideal_way/widgets/mainDrawer.dart';
 import 'emojiGame/emojiGameEasy.dart';
+import 'emojiGame/emojiGameHard.dart';
 import 'emojiGame/emojiGameMedium.dart';
 
 class Games extends StatelessWidget {
@@ -46,12 +47,12 @@ class Games extends StatelessWidget {
                     ),
                     GestureDetector(
                       child:
-                          iconInBar("Difficult", 1, 'assets/SurveyLv3.png', 100),
+                          iconInBar("Hard", 1, 'assets/SurveyLv3.png', 100),
                       onTap: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EmojiGameMedium1()));
+                                builder: (context) => EmojiGameHard1()));
                       },
                     ),
                   ],
