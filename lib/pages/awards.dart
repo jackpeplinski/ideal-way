@@ -16,7 +16,6 @@ class AwardsPage extends StatefulWidget {
 class _AwardsPageState extends State<AwardsPage> {
   @override
   Widget build(BuildContext context) {
-    //could use to scale? double width = MediaQuery.of(context).size.width;
     return Scaffold(
       drawer: MainDrawer(),
       backgroundColor: Theme.of(context).backgroundColor,
@@ -28,92 +27,146 @@ class _AwardsPageState extends State<AwardsPage> {
           child: Column(children: <Widget>[
         Stack(
           children: <Widget>[
-            backgroundBar(
+            awardBackgroundBar(
                 "Level 1",
                 widget.user.award.confidence.opacity1,
-                'assets/trophy.png',
+                'assets/TeamworkOG.png',
                 50,
                 "Level 2",
                 widget.user.award.confidence.opacity2,
-                'assets/trophy.png',
+                'assets/TeamworkSilver.png',
                 50,
                 "Level 3",
                 widget.user.award.confidence.opacity3,
-                'assets/trophy.png',
-                50),
-            titleBar("Empathy"),
-          ],
-        ),
-        Stack(
-          children: <Widget>[
-            backgroundBar(
-                "Level 1",
-                widget.user.award.leadership.opacity1,
-                'assets/trophy.png',
-                50,
-                "Level 2",
-                widget.user.award.leadership.opacity2,
-                'assets/trophy.png',
-                50,
-                "Level 3",
-                widget.user.award.leadership.opacity3,
-                'assets/trophy.png',
-                50),
-            titleBar("Leadership"),
-          ],
-        ),
-        Stack(
-          children: <Widget>[
-            backgroundBar(
-                "Level 1",
-                widget.user.award.teamwork.opacity1,
-                'assets/trophy.png',
-                50,
-                "Level 2",
-                widget.user.award.teamwork.opacity2,
-                'assets/trophy.png',
-                50,
-                "Level 3",
-                widget.user.award.teamwork.opacity3,
-                'assets/trophy.png',
+                'assets/TeamworkGolds.png',
                 50),
             titleBar("Teamwork"),
           ],
         ),
         Stack(
           children: <Widget>[
-            backgroundBar(
+            awardBackgroundBar(
                 "Level 1",
-                widget.user.award.confidence.opacity1,
-                'assets/trophy.png',
+                widget.user.award.leadership.opacity1,
+                'assets/ResponsibilityOG.png',
                 50,
                 "Level 2",
-                widget.user.award.confidence.opacity2,
-                'assets/trophy.png',
+                widget.user.award.leadership.opacity2,
+                'assets/ResponsibilityBronze.png',
                 50,
                 "Level 3",
-                widget.user.award.confidence.opacity3,
-                'assets/trophy.png',
+                widget.user.award.leadership.opacity3,
+                'assets/ResponsibilityGold.png',
                 50),
-            titleBar("Confidence"),
+            titleBar("Responsibility"),
           ],
         ),
         Stack(
           children: <Widget>[
-            backgroundBar(
+            awardBackgroundBar(
+                "Level 1",
+                widget.user.award.teamwork.opacity1,
+                'assets/LeadershipOG.png',
+                50,
+                "Level 2",
+                widget.user.award.teamwork.opacity2,
+                'assets/LeadershipSilver.png',
+                50,
+                "Level 3",
+                widget.user.award.teamwork.opacity3,
+                'assets/LeadershipGold.png',
+                50),
+            titleBar("Leadership"),
+          ],
+        ),
+        Stack(
+          children: <Widget>[
+            awardBackgroundBar(
+                "Level 1",
+                widget.user.award.confidence.opacity1,
+                'assets/EmpowermentOG.png',
+                50,
+                "Level 2",
+                widget.user.award.confidence.opacity2,
+                'assets/EmpowermentSilver.png',
+                50,
+                "Level 3",
+                widget.user.award.confidence.opacity3,
+                'assets/EmpowermentGold.png',
+                50),
+            titleBar("Empowerment"),
+          ],
+        ),
+        Stack(
+          children: <Widget>[
+            awardBackgroundBar(
                 "Level 1",
                 widget.user.award.empathy.opacity1,
-                'assets/trophy.png',
+                'assets/InclusionOG.png',
                 50,
                 "Level 2",
                 widget.user.award.empathy.opacity2,
-                'assets/trophy.png',
+                'assets/InclusionSilver.png',
                 50,
                 "Level 3",
                 widget.user.award.empathy.opacity3,
-                'assets/trophy.png',
+                'assets/InclusionGold.png',
                 50),
-            titleBar("Empathy"),
+            titleBar("Inclusion"),
+          ],
+        ),
+        Stack(
+          children: <Widget>[
+            awardBackgroundBar(
+                "Level 1",
+                widget.user.award.empathy.opacity1,
+                'assets/ConfidenceOG.png',
+                50,
+                "Level 2",
+                widget.user.award.empathy.opacity2,
+                'assets/ConfidenceSilver.png',
+                50,
+                "Level 3",
+                widget.user.award.empathy.opacity3,
+                'assets/ConfidenceGold.png',
+                50),
+            titleBar("Inclusion"),
+          ],
+        ),
+        Stack(
+          children: <Widget>[
+            awardBackgroundBar(
+                "Level 1",
+                widget.user.award.empathy.opacity1,
+                'assets/InclusionOG.png',
+                50,
+                "Level 2",
+                widget.user.award.empathy.opacity2,
+                'assets/InclusionSilver.png',
+                50,
+                "Level 3",
+                widget.user.award.empathy.opacity3,
+                'assets/InclusionGold.png',
+                50),
+            titleBar("Inclusion"),
+          ],
+        ),
+        Stack(
+          children: <Widget>[
+            awardBackgroundBar(
+                "Level 1",
+                widget.user.award.empathy.opacity1,
+                'assets/EmpowermentOG.png',
+                50,
+                "Level 2",
+                widget.user.award.empathy.opacity2,
+                'assets/EmpowermentSilver.png',
+                50,
+                "Level 3",
+                widget.user.award.empathy.opacity3,
+                'assets/EmpowermentGold.png',
+                50),
+            titleBar("Empowerment"),
           ],
         ),
       ])),

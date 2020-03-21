@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ideal_way/widgets/barWidgets.dart';
-import 'package:ideal_way/widgets/mainDrawer.dart';
+import '../widgets/barWidgets.dart';
+import 'comingSoon.dart';
 import 'emojiGame/emojiGameEasy.dart';
 import 'emojiGame/emojiGameHard.dart';
 import 'emojiGame/emojiGameMedium.dart';
@@ -9,7 +10,6 @@ class Games extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MainDrawer(),
       backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
         title: Text("Games"),
@@ -17,49 +17,126 @@ class Games extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(children: <Widget>[
-          Align(
-            alignment: Alignment.center,
-            child: Card(
-              color: Colors.deepOrange[50],
-              margin: EdgeInsets.symmetric(horizontal: 15, vertical: 30),
-              child: Padding(
-                padding: EdgeInsets.all(30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    GestureDetector(
-                      child: iconInBar("Easy", 1, 'assets/SurveyLv1.png', 100),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => EmojiGameEasy1()));
-                      },
-                    ),
-                    GestureDetector(
-                      child: iconInBar("Medium", 1, 'assets/SurveyLv2.png', 100),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => EmojiGameMedium1()));
-                      },
-                    ),
-                    GestureDetector(
-                      child:
-                          iconInBar("Hard", 1, 'assets/SurveyLv3.png', 100),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => EmojiGameHard1()));
-                      },
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          )
+          Stack(children: <Widget>[
+            gameBackgroundBar(
+                context,
+                "Easy",
+                1,
+                'assets/SurveyLv1.png',
+                100,
+                EmojiGameEasy1(),
+                "Medium",
+                1,
+                'assets/SurveyLv2.png',
+                100,
+                EmojiGameMedium1(),
+                "Hard",
+                1,
+                'assets/SurveyLv3.png',
+                100,
+                EmojiGameHard1()),
+            titleBar("Empathy")
+          ]),
+          Stack(children: <Widget>[
+            gameBackgroundBar(
+                context,
+                "Easy",
+                1,
+                'assets/StoryTimeLv1.png',
+                100,
+                ComingSoon(),
+                "Medium",
+                1,
+                'assets/StoryTimeLv2.png',
+                100,
+                ComingSoon(),
+                "Hard",
+                1,
+                'assets/StoryTimeLv3.png',
+                100,
+                ComingSoon()),
+            titleBar("StoryTime")
+          ]),
+          Stack(children: <Widget>[
+            gameBackgroundBar(
+                context,
+                "Easy",
+                1,
+                'assets/PicStoryLv1.png',
+                100,
+                ComingSoon(),
+                "Medium",
+                1,
+                'assets/PicStoryLv2.png',
+                100,
+                ComingSoon(),
+                "Hard",
+                1,
+                'assets/PicStoryLv3.png',
+                100,
+                ComingSoon()),
+            titleBar("PicStory")
+          ]),
+          Stack(children: <Widget>[
+            gameBackgroundBar(
+                context,
+                "Easy",
+                1,
+                'assets/PictionaryLv1.png',
+                100,
+                ComingSoon(),
+                "Medium",
+                1,
+                'assets/PictionaryLv2.png',
+                100,
+                ComingSoon(),
+                "Hard",
+                1,
+                'assets/PictionaryLv3.png',
+                100,
+                ComingSoon()),
+            titleBar("Pictionary")
+          ]),
+          Stack(children: <Widget>[
+            gameBackgroundBar(
+                context,
+                "Easy",
+                1,
+                'assets/GuessEmotionLv1.png',
+                100,
+                ComingSoon(),
+                "Medium",
+                1,
+                'assets/GuessEmotionLv2.png',
+                100,
+                ComingSoon(),
+                "Hard",
+                1,
+                'assets/GuessEmotionLv3.png',
+                100,
+                ComingSoon()),
+            titleBar("GuessEmotion")
+          ]),
+          Stack(children: <Widget>[
+            gameBackgroundBar(
+                context,
+                "Easy",
+                1,
+                'assets/ColorMatcherLv1.png',
+                100,
+                ComingSoon(),
+                "Medium",
+                1,
+                'assets/ColorMatcherLv2.png',
+                100,
+                ComingSoon(),
+                "Hard",
+                1,
+                'assets/ColorMatcherLv3.png',
+                100,
+                ComingSoon()),
+            titleBar("ColorMatcher")
+          ]),
         ]),
       ),
     );

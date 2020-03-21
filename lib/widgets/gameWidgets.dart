@@ -94,7 +94,6 @@ Widget gameScreen(
     Widget nextPage3,
     Widget nextPage4) {
   return Scaffold(
-    drawer: MainDrawer(),
     backgroundColor: Theme.of(context).backgroundColor,
     appBar: AppBar(
       title: Text("Emoji Game"),
@@ -120,7 +119,6 @@ Widget gameScreen(
 Widget incorrectAnswer(
     BuildContext context, String imageLink, String errorMessage) {
   return Scaffold(
-    drawer: MainDrawer(),
     backgroundColor: Theme.of(context).backgroundColor,
     appBar: AppBar(
       title: Text("Emoji Game"),
@@ -138,7 +136,6 @@ Widget incorrectAnswer(
             child: questionBar("Answer incorrect. Review the message below.")),
         Expanded(
           child: GestureDetector(
-            //onTap: tapGameHandler,
             child: Card(
               color: Colors.red,
               child: Padding(
@@ -176,7 +173,6 @@ Widget incorrectAnswer(
 
 Widget presentAward(BuildContext context, String imageLink, String awardLink) {
   return Scaffold(
-    drawer: MainDrawer(),
     backgroundColor: Theme.of(context).backgroundColor,
     appBar: AppBar(
       title: Text("Emoji Game"),

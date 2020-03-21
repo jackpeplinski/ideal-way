@@ -32,8 +32,8 @@ class _HomeState extends State<Home> {
       teamwork: Awards(),
       ),
     );
-//what's with bar?
-  void _bar(String award, String level){
+
+  void _award(String award, String level){
     setState(() {
       if(award == "confidence"){
         if(user.award.confidence.level1 == level){
@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
         accentColor: Colors.blue[200],
         primarySwatch: Colors.orange,
         backgroundColor: Colors.teal[50],
-        fontFamily: 'Open Sans',
+        fontFamily: 'Oxanium',
       ),
       routes:{
         '/' : (ctx) => Login(),
