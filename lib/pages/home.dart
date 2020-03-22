@@ -77,7 +77,7 @@ class HomeScreen extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/idealWay.png'),
+                image: AssetImage('assets/logoCutOut.png'),
                 fit: BoxFit.fill,
               ),
             ),
