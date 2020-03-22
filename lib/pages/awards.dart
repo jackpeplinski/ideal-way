@@ -38,7 +38,7 @@ class _AwardsPageState extends State<AwardsPage> {
                 50,
                 "Level 3",
                 widget.user.award.confidence.opacity3,
-                'assets/TeamworkGolds.png',
+                'assets/TeamworkGold.png',
                 50),
             titleBar("Teamwork"),
           ],
