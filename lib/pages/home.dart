@@ -84,7 +84,7 @@ class HomeScreen extends StatelessWidget {
           ),
           GestureDetector(
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (context) => Games()));
               },
               child: selectCard(context, "Singleplayer", MdiIcons.account)),

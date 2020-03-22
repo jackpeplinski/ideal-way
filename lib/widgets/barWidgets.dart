@@ -33,6 +33,7 @@ Widget gameBackgroundBar(
   String imageLink3,
   double height3,
   Widget route3,
+  bool active,
 ) {
   return Align(
     alignment: Alignment.center,
@@ -47,22 +48,31 @@ Widget gameBackgroundBar(
             GestureDetector(
               child: iconInBar(levelText1, setOpacity1, imageLink1, height1),
               onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => route1));
+                active
+                    ? Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => route1))
+                    : Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => route1));
               },
             ),
             GestureDetector(
               child: iconInBar(levelText2, setOpacity2, imageLink2, height2),
               onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => route2));
+                active
+                    ? Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => route2))
+                    : Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => route2));
               },
             ),
             GestureDetector(
               child: iconInBar(levelText3, setOpacity3, imageLink3, height3),
               onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => route3));
+                active
+                    ? Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => route3))
+                    : Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => route3));
               },
             ),
           ],

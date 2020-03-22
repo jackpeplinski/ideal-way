@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:ideal_way/pages/games.dart';
-import 'package:ideal_way/widgets/mainDrawer.dart';
 
 Widget questionBar(String text) {
   return Align(
     alignment: Alignment.center,
     child: Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
       color: Colors.orange,
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 30,
-          color: Colors.white,
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 0),
+        child: Text(
+          text,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.white,
+          ),
         ),
       ),
     ),
@@ -28,8 +31,21 @@ Widget choiceIcon(
     child: GestureDetector(
       onTap: tapGameHandler,
       child: Card(
+        color: Theme.of(context).primaryColor,
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
         child: Padding(
-            padding: EdgeInsets.all(60), child: Center(child: Text(selection))),
+          padding: const EdgeInsets.symmetric(vertical: 50.0),
+          child: Center(
+            child: Text(
+              selection,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30.0,
+              ),
+            ),
+          ),
+        ),
       ),
     ),
   );
@@ -41,45 +57,60 @@ Widget choicesGrid(
     String selection2,
     String selection3,
     String selection4,
+    int correct,
     Widget nextPage1,
     Widget nextPage2,
     Widget nextPage3,
     Widget nextPage4) {
-  return Column(children: <Widget>[
-    Row(
-      children: <Widget>[
-        choiceIcon(
-          context,
-          selection1,
-          //this whole next line is one function
-          () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) => nextPage1)),
-        ),
-        choiceIcon(
-          context,
-          selection2,
-          () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) => nextPage2)),
-        )
-      ],
-    ),
-    Row(
-      children: <Widget>[
-        choiceIcon(
-          context,
-          selection3,
-          () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) => nextPage3)),
-        ),
-        choiceIcon(
-          context,
-          selection4,
-          () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) => nextPage4)),
-        )
-      ],
-    ),
-  ]);
+  return Expanded(
+    child: Column(children: <Widget>[
+      Row(
+        children: <Widget>[
+          choiceIcon(
+            context,
+            selection1,
+            //this whole next line is one function
+            (correct == 1)
+                ? () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage1))
+                : () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage1)),
+          ),
+          choiceIcon(
+            context,
+            selection2,
+            (correct == 2)
+                ? () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage2))
+                : () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage2)),
+          )
+        ],
+      ),
+      Row(
+        children: <Widget>[
+          choiceIcon(
+            context,
+            selection3,
+            (correct == 3)
+                ? () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage3))
+                : () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage3)),
+          ),
+          choiceIcon(
+            context,
+            selection4,
+            (correct == 4)
+                ? () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage4))
+                : () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => nextPage4)),
+          )
+        ],
+      ),
+    ]),
+  );
 }
 
 Widget gameScreen(
@@ -89,6 +120,7 @@ Widget gameScreen(
     String selection2,
     String selection3,
     String selection4,
+    int correct,
     Widget nextPage1,
     Widget nextPage2,
     Widget nextPage3,
@@ -107,11 +139,9 @@ Widget gameScreen(
             width: 300,
             height: 400,
           ),
-          Center(
-              child: questionBar(
-                  "What emotion is this person most likely feeling?")),
+          Center(child: questionBar("How are they feeling?")),
           choicesGrid(context, selection1, selection2, selection3, selection4,
-              nextPage1, nextPage2, nextPage3, nextPage4)
+              correct, nextPage1, nextPage2, nextPage3, nextPage4)
         ]),
   );
 }
@@ -130,21 +160,23 @@ Widget incorrectAnswer(
         Image.asset(
           imageLink,
           width: 300,
-          height: 400,
+          height: 390,
         ),
         Center(
-            child: questionBar("Answer incorrect. Review the message below.")),
+            child: questionBar(
+                "Good try! Try again with the help of the message below.")),
         Expanded(
           child: GestureDetector(
-            child: Card(
-              color: Colors.red,
-              child: Padding(
-                padding: EdgeInsets.all(60),
+            child: SingleChildScrollView(
+              child: Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(25.0)),
+                color: Colors.red,
                 child: Text(
                   errorMessage,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 20,
                     color: Colors.white,
                   ),
                 ),
@@ -155,9 +187,12 @@ Widget incorrectAnswer(
         GestureDetector(
           onTap: () => Navigator.pop(context),
           child: Card(
-            color: Colors.orange,
+            margin: EdgeInsets.fromLTRB(5, 0, 5, 10),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0)),
+            color: Theme.of(context).primaryColor,
             child: Padding(
-              padding: EdgeInsets.all(30),
+              padding: EdgeInsets.all(5),
               child: Text(
                 "Return",
                 textAlign: TextAlign.center,
@@ -186,30 +221,34 @@ Widget presentAward(BuildContext context, String imageLink, String awardLink) {
           width: 300,
           height: 400,
         ),
-        Center(child: questionBar("Answer correct! You earned a award.")),
+        Center(child: questionBar("Answer correct! You earned an award.")),
         Expanded(
           child: GestureDetector(
             child: Card(
-              color: Colors.deepOrange[50],
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25.0)),
+              color: Theme.of(context).accentColor,
               child: Padding(
-                  padding: EdgeInsets.all(60), child: Image.asset(awardLink)),
+                padding: EdgeInsets.all(40),
+                child: Image.asset(awardLink),
+              ),
             ),
           ),
         ),
         GestureDetector(
           onTap: () {
-            Navigator.push(
+            Navigator.pushReplacement(
                 context, MaterialPageRoute(builder: (context) => Games()));
           },
           child: Card(
-            color: Colors.orange,
-            child: Padding(
-              padding: EdgeInsets.all(30),
-              child: Text(
-                "Games Page",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 30, color: Colors.white),
-              ),
+            color: Theme.of(context).primaryColor,
+            margin: EdgeInsets.fromLTRB(10, 0, 10, 20),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0)),
+            child: Text(
+              "Return to Games Page",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 30, color: Colors.white),
             ),
           ),
         )
@@ -217,3 +256,4 @@ Widget presentAward(BuildContext context, String imageLink, String awardLink) {
     ),
   );
 }
+

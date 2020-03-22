@@ -5,12 +5,15 @@ import 'comingSoon.dart';
 import 'emojiGame/emojiGameEasy.dart';
 import 'emojiGame/emojiGameHard.dart';
 import 'emojiGame/emojiGameMedium.dart';
+import '../widgets/mainDrawer.dart';
 
 class Games extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
+      drawer: MainDrawer(),
       appBar: AppBar(
         title: Text("Games"),
         backgroundColor: Theme.of(context).primaryColor,
@@ -22,20 +25,21 @@ class Games extends StatelessWidget {
                 context,
                 "Easy",
                 1,
-                'assets/SurveyLv1.png',
-                100,
+                'assets/GuessEmotionLv1.png',
+                100, 
                 EmojiGameEasy1(),
                 "Medium",
                 1,
-                'assets/SurveyLv2.png',
+                'assets/GuessEmotionLv2.png',
                 100,
                 EmojiGameMedium1(),
                 "Hard",
                 1,
-                'assets/SurveyLv3.png',
+                'assets/GuessEmotionLv3.png',
                 100,
-                EmojiGameHard1()),
-            titleBar("Empathy")
+                EmojiGameHard1(),
+                true),
+            titleBar("Emotion Game")
           ]),
           Stack(children: <Widget>[
             gameBackgroundBar(
@@ -54,7 +58,8 @@ class Games extends StatelessWidget {
                 1,
                 'assets/StoryTimeLv3.png',
                 100,
-                ComingSoon()),
+                ComingSoon(),
+                false),
             titleBar("StoryTime")
           ]),
           Stack(children: <Widget>[
@@ -74,7 +79,8 @@ class Games extends StatelessWidget {
                 1,
                 'assets/PicStoryLv3.png',
                 100,
-                ComingSoon()),
+                ComingSoon(),
+                false),
             titleBar("PicStory")
           ]),
           Stack(children: <Widget>[
@@ -94,28 +100,9 @@ class Games extends StatelessWidget {
                 1,
                 'assets/PictionaryLv3.png',
                 100,
-                ComingSoon()),
+                ComingSoon(),
+                false),
             titleBar("Pictionary")
-          ]),
-          Stack(children: <Widget>[
-            gameBackgroundBar(
-                context,
-                "Easy",
-                1,
-                'assets/GuessEmotionLv1.png',
-                100,
-                ComingSoon(),
-                "Medium",
-                1,
-                'assets/GuessEmotionLv2.png',
-                100,
-                ComingSoon(),
-                "Hard",
-                1,
-                'assets/GuessEmotionLv3.png',
-                100,
-                ComingSoon()),
-            titleBar("GuessEmotion")
           ]),
           Stack(children: <Widget>[
             gameBackgroundBar(
@@ -134,7 +121,8 @@ class Games extends StatelessWidget {
                 1,
                 'assets/ColorMatcherLv3.png',
                 100,
-                ComingSoon()),
+                ComingSoon(),
+                false),
             titleBar("ColorMatcher")
           ]),
         ]),

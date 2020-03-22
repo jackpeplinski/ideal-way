@@ -112,7 +112,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ideal Way',
+      title: 'Ideal Play',
       theme: ThemeData(
         brightness: Brightness.light,
         accentColor: Colors.blue[200],

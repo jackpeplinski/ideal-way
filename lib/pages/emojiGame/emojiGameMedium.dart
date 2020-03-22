@@ -18,6 +18,7 @@ class _EmojiGameMedium1State extends State<EmojiGameMedium1> {
         "Anger",
         "Surprise",
         "Disgust",
+        3,
         IncorrectEmojiGameMedium1(),
         IncorrectEmojiGameMedium1(),
         EmojiGameEasy2(),
@@ -56,6 +57,7 @@ class _EmojiGameEasy2State extends State<EmojiGameEasy2> {
         "Amusement",
         "Sad",
         "Disgust",
+        2,
         IncorrectEmojiGameMedium2(),
         EmojiGameMedium3(),
         IncorrectEmojiGameMedium2(),
@@ -93,6 +95,7 @@ class _EmojiGameMedium3State extends State<EmojiGameMedium3> {
       "Anger",
       "Contempt",
       "Sad",
+      1,
       CorrectEmojiGameMedium3(),
       IncorrectEmojiGameMedium3(),
       IncorrectEmojiGameMedium3(),
@@ -123,6 +126,6 @@ class CorrectEmojiGameMedium3 extends StatefulWidget {
 class _CorrectEmojiGameMedium3State extends State<CorrectEmojiGameMedium3> {
   @override
   Widget build(BuildContext context) {
-    return presentAward(context, 'assets/emotion1-2.png', 'assets/trophy.png');
+    return presentAward(context, 'assets/emotion1-2.png', 'assets/EmpathySilver.png');
   }
 }

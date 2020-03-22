@@ -18,6 +18,7 @@ class _EmojiGameEasy1State extends State<EmojiGameEasy1> {
         "Contempt",
         "Disgust",
         "Fear",
+        1,
         EmojiGameEasy2(),
         IncorrectEmojiGameEasy1(),
         IncorrectEmojiGameEasy1(),
@@ -53,9 +54,10 @@ class _EmojiGameEasy2State extends State<EmojiGameEasy2> {
         context,
         'assets/emotions0-2.jpg',
         "Angry",
-        "Surprise",
+        "Surprised",
         "Happy",
         "Amusement",
+        4,
         IncorrectEmojiGameEasy2(),
         IncorrectEmojiGameEasy2(),
         IncorrectEmojiGameEasy2(),
@@ -89,10 +91,11 @@ class _EmojiGameEasy3State extends State<EmojiGameEasy3> {
     return gameScreen(
       context,
       'assets/emotions0-3.jpg',
-      "Surprise",
+      "Surprised",
       "Disgust",
       "Fear",
       "Happy",
+      1,
       CorrectEmojiGameEasy3(),
       IncorrectEmojiGameEasy3(),
       IncorrectEmojiGameEasy3(),
@@ -123,6 +126,6 @@ class CorrectEmojiGameEasy3 extends StatefulWidget {
 class _CorrectEmojiGameEasy3State extends State<CorrectEmojiGameEasy3> {
   @override
   Widget build(BuildContext context) {
-    return presentAward(context, 'assets/emotions0-3.jpg', 'assets/trophy.png');
+    return presentAward(context, 'assets/emotions0-3.jpg', 'assets/EmpathyOG.png');
   }
 }

@@ -17,7 +17,6 @@ class MainDrawer extends StatelessWidget {
         title,
         style: TextStyle(
           color: Theme.of(context).primaryColor,
-          fontFamily: "OxaniumBold"
         ),
       ),
       onTap: tapHandler,
