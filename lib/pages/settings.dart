@@ -3,7 +3,6 @@ import '../widgets/mainDrawer.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import './feedback.dart';
-import './profile.dart';
 
 class Settings extends StatelessWidget {
   static const routeName = './Settings';
@@ -74,12 +73,12 @@ class Settings extends StatelessWidget {
               "Send us feedback!",
               () => Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => FeedbackPage()))),
-          settingsCard(
+          /* settingsCard(
               context,
               MdiIcons.accountCircle,
               "Adjust your information!",
               () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => Profile()))),
+                  builder: (BuildContext context) => Profile()))), */
           settingsCard(
             context,
             MdiIcons.logout,

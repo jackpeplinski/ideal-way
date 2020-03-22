@@ -19,18 +19,18 @@ class _EmojiGameHard1State extends State<EmojiGameHard1> {
         "Amusement",
         "Contempt",
         EmojiGameHard2(),
-        IncorrectEmojiGame1(),
-        IncorrectEmojiGame1(),
-        IncorrectEmojiGame1());
+        IncorrectEmojiGameHard1(),
+        IncorrectEmojiGameHard1(),
+        IncorrectEmojiGameHard1());
   }
 }
 
-class IncorrectEmojiGame1 extends StatefulWidget {
+class IncorrectEmojiGameHard1 extends StatefulWidget {
   @override
-  _IncorrectEmojiGame1State createState() => _IncorrectEmojiGame1State();
+  _IncorrectEmojiGameHard1State createState() => _IncorrectEmojiGameHard1State();
 }
 
-class _IncorrectEmojiGame1State extends State<IncorrectEmojiGame1> {
+class _IncorrectEmojiGameHard1State extends State<IncorrectEmojiGameHard1> {
   @override
   Widget build(BuildContext context) {
     //change incorrect message
@@ -86,7 +86,7 @@ class _EmojiGameHard3State extends State<EmojiGameHard3> {
   Widget build(BuildContext context) {
     return gameScreen(
       context,
-      'emotions3-4.jpg',
+      'assets/emotions3-4.jpg',
       "Surprise",
       "Amusement",
       "Angry",
@@ -107,7 +107,7 @@ class IncorrectEmojiGame3 extends StatefulWidget {
 class _IncorrectEmojiGame3State extends State<IncorrectEmojiGame3> {
   @override
   Widget build(BuildContext context) {
-    return incorrectAnswer(context, 'emotions3-4.jpg',
+    return incorrectAnswer(context, 'assets/emotions3-4.jpg',
         "When someone is____, they tend to press their lips together tightly, and furrow their eyebrows. Also, they will tend to shift and raise their voice, becoming more aggressive and perhaps even yelling. ");
   }
 }
@@ -120,6 +120,6 @@ class CorrectEmojiGame3 extends StatefulWidget {
 class _CorrectEmojiGame3State extends State<CorrectEmojiGame3> {
   @override
   Widget build(BuildContext context) {
-    return presentAward(context, 'emotions3-4.jpg', 'assets/trophy.png');
+    return presentAward(context, 'assets/emotions3-4.jpg', 'assets/trophy.png');
   }
 }
