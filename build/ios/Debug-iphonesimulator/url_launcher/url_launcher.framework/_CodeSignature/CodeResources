@@ -14,19 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XgZqdGyTaYB6xELkiRsFZ0Iykyg=
-		</data>
-		<key>Info.plist~master</key>
-		<data>
-		AVK+Xwvr/rZhSOgaZDv9tx+Twy0=
+		JVfXjcE5QUVulDtbjxDXH4+Xx/k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		mzMMjRjqfvq2pHSdDUwOv+emkjc=
-		</data>
-		<key>url_launcher~master</key>
-		<data>
-		uOYBsl6Hj/MYXS5Wg6a6FKv5Drg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -53,17 +45,6 @@
 			HsLbjY7ljMQgU7ajxZiK7uJu0ET8Vhjyu4NmtOpon2o=
 			</data>
 		</dict>
-		<key>Info.plist~master</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AVK+Xwvr/rZhSOgaZDv9tx+Twy0=
-			</data>
-			<key>hash2</key>
-			<data>
-			s9IV7bQoB8imwGcu7lbk9LwTfdrzZd8BCDQF2UrrCOw=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
@@ -73,17 +54,6 @@
 			<key>hash2</key>
 			<data>
 			r9lqpngsjLXjB9KgRwkNVEZBZ1S2Lvz5cjNZEv0goSs=
-			</data>
-		</dict>
-		<key>url_launcher~master</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uOYBsl6Hj/MYXS5Wg6a6FKv5Drg=
-			</data>
-			<key>hash2</key>
-			<data>
-			xRZ6hbrey8OMVwJZEShIbxA+s9QTcywBzGpzBYx1r9A=
 			</data>
 		</dict>
 	</dict>

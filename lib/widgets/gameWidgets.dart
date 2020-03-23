@@ -23,10 +23,7 @@ Widget questionBar(String text) {
 }
 
 Widget choiceIcon(
-    BuildContext context,
-    String selection,
-    //these functions
-    Function tapGameHandler) {
+    BuildContext context, String selection, Function tapGameHandler) {
   return Expanded(
     child: GestureDetector(
       onTap: tapGameHandler,
@@ -256,4 +253,3 @@ Widget presentAward(BuildContext context, String imageLink, String awardLink) {
     ),
   );
 }
-

@@ -31,7 +31,7 @@ class _LoginState extends State<Login> {
     final userName = userNameController.text;
     final password = passwordController.text;
 
-    if (userName == "JoshuaRabovsky" && password == "Western") {
+    if (userName == "" && password == "") {
       Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
     }
   }
@@ -47,6 +47,24 @@ class _LoginState extends State<Login> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
+          Card(
+            margin: EdgeInsets.fromLTRB(20, 0, 20, 30),
+            elevation: 5.0,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0)),
+            color: Theme.of(context).accentColor,
+            child: Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text(
+                "Ideal Play, by Ideal Way",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 30.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
           Image.asset(
             'assets/appIcon.png',
             width: 200,

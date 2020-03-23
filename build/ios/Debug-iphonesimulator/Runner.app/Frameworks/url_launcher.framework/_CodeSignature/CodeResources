@@ -6,42 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		XgZqdGyTaYB6xELkiRsFZ0Iykyg=
-		</data>
-		<key>Info.plist~master</key>
-		<data>
-		AVK+Xwvr/rZhSOgaZDv9tx+Twy0=
-		</data>
-		<key>url_launcher~master</key>
-		<data>
-		wTP38EBv7+c6zAFbiBIu1TL3gIo=
+		JVfXjcE5QUVulDtbjxDXH4+Xx/k=
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict>
-		<key>Info.plist~master</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AVK+Xwvr/rZhSOgaZDv9tx+Twy0=
-			</data>
-			<key>hash2</key>
-			<data>
-			s9IV7bQoB8imwGcu7lbk9LwTfdrzZd8BCDQF2UrrCOw=
-			</data>
-		</dict>
-		<key>url_launcher~master</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wTP38EBv7+c6zAFbiBIu1TL3gIo=
-			</data>
-			<key>hash2</key>
-			<data>
-			dZMBVjYLYvioCFdqiB9JsOZvIuqskUvTvzJIeZiZNx4=
-			</data>
-		</dict>
-	</dict>
+	<dict/>
 	<key>rules</key>
 	<dict>
 		<key>^.*</key>

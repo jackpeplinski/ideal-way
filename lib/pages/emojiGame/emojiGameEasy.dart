@@ -79,7 +79,7 @@ class _IncorrectEmojiGameEasy2State extends State<IncorrectEmojiGameEasy2> {
   }
 }
 
-//third image page
+//third image
 class EmojiGameEasy3 extends StatefulWidget {
   @override
   _EmojiGameEasy3State createState() => _EmojiGameEasy3State();
@@ -89,18 +89,17 @@ class _EmojiGameEasy3State extends State<EmojiGameEasy3> {
   @override
   Widget build(BuildContext context) {
     return gameScreen(
-      context,
-      'assets/emotions0-3.jpg',
-      "Surprised",
-      "Disgust",
-      "Fear",
-      "Happy",
-      1,
-      CorrectEmojiGameEasy3(),
-      IncorrectEmojiGameEasy3(),
-      IncorrectEmojiGameEasy3(),
-      IncorrectEmojiGameEasy3(),
-    );
+        context,
+        'assets/emotions0-4.jpg',
+        "Angry",
+        "Surprised",
+        "Happy",
+        "Amusement",
+        4,
+        IncorrectEmojiGameEasy3(),
+        IncorrectEmojiGameEasy3(),
+        IncorrectEmojiGameEasy3(),
+        EmojiGameEasy4());
   }
 }
 
@@ -113,17 +112,132 @@ class IncorrectEmojiGameEasy3 extends StatefulWidget {
 class _IncorrectEmojiGameEasy3State extends State<IncorrectEmojiGameEasy3> {
   @override
   Widget build(BuildContext context) {
+    return incorrectAnswer(context, 'assets/emotions0-4.jpg',
+        "");
+  }
+}
+
+//fourth image
+class EmojiGameEasy4 extends StatefulWidget {
+  @override
+  _EmojiGameEasy4State createState() => _EmojiGameEasy4State();
+}
+
+class _EmojiGameEasy4State extends State<EmojiGameEasy4> {
+  @override
+  Widget build(BuildContext context) {
+    return gameScreen(
+        context,
+        'assets/emotions0-5.jpg',
+        "Angry",
+        "Surprised",
+        "Happy",
+        "Amusement",
+        4,
+        IncorrectEmojiGameEasy4(),
+        IncorrectEmojiGameEasy4(),
+        IncorrectEmojiGameEasy4(),
+        EmojiGameEasy5());
+  }
+}
+
+class IncorrectEmojiGameEasy4 extends StatefulWidget {
+  @override
+  _IncorrectEmojiGameEasy4State createState() =>
+      _IncorrectEmojiGameEasy4State();
+}
+
+class _IncorrectEmojiGameEasy4State extends State<IncorrectEmojiGameEasy4> {
+  @override
+  Widget build(BuildContext context) {
+    return incorrectAnswer(context, 'assets/emotions0-4.jpg',
+        "");
+  }
+}
+
+//fifth iamge
+class EmojiGameEasy5 extends StatefulWidget {
+  @override
+  _EmojiGameEasy5State createState() => _EmojiGameEasy5State();
+}
+
+class _EmojiGameEasy5State extends State<EmojiGameEasy5> {
+  @override
+  Widget build(BuildContext context) {
+    return gameScreen(
+        context,
+        'assets/emotions0-6.jpg',
+        "Angry",
+        "Surprised",
+        "Happy",
+        "Amusement",
+        4,
+        IncorrectEmojiGameEasy5(),
+        IncorrectEmojiGameEasy5(),
+        IncorrectEmojiGameEasy5(),
+        EmojiGameEasyLast());
+  }
+}
+
+class IncorrectEmojiGameEasy5 extends StatefulWidget {
+  @override
+  _IncorrectEmojiGameEasy5State createState() =>
+      _IncorrectEmojiGameEasy5State();
+}
+
+class _IncorrectEmojiGameEasy5State extends State<IncorrectEmojiGameEasy5> {
+  @override
+  Widget build(BuildContext context) {
+    return incorrectAnswer(context, 'assets/emotions0-6.jpg',
+        "");
+  }
+}
+
+//last image page
+class EmojiGameEasyLast extends StatefulWidget {
+  @override
+  _EmojiGameEasyLastState createState() => _EmojiGameEasyLastState();
+}
+
+class _EmojiGameEasyLastState extends State<EmojiGameEasyLast> {
+  @override
+  Widget build(BuildContext context) {
+    return gameScreen(
+      context,
+      'assets/emotions0-3.jpg',
+      "Surprised",
+      "Disgust",
+      "Fear",
+      "Happy",
+      1,
+      CorrectEmojiGameEasyLast(),
+      IncorrectEmojiGameEasyLast(),
+      IncorrectEmojiGameEasyLast(),
+      IncorrectEmojiGameEasyLast(),
+    );
+  }
+}
+
+class IncorrectEmojiGameEasyLast extends StatefulWidget {
+  @override
+  _IncorrectEmojiGameEasyLastState createState() =>
+      _IncorrectEmojiGameEasyLastState();
+}
+
+class _IncorrectEmojiGameEasyLastState extends State<IncorrectEmojiGameEasyLast> {
+  @override
+  Widget build(BuildContext context) {
     return incorrectAnswer(context, 'assets/emotions0-3.jpg',
         "When someone is ___, they will tend to open their mouth and eyes widely, and raise their eyebrows. It may also include movements like jumping back, and verbal outbursts such as yelling, screaming, or gasping.");
   }
 }
 
-class CorrectEmojiGameEasy3 extends StatefulWidget {
+class CorrectEmojiGameEasyLast extends StatefulWidget {
   @override
-  _CorrectEmojiGameEasy3State createState() => _CorrectEmojiGameEasy3State();
+  _CorrectEmojiGameEasyLastState createState() => _CorrectEmojiGameEasyLastState();
 }
 
-class _CorrectEmojiGameEasy3State extends State<CorrectEmojiGameEasy3> {
+class _CorrectEmojiGameEasyLastState extends State<CorrectEmojiGameEasyLast> {
   @override
   Widget build(BuildContext context) {
     return presentAward(context, 'assets/emotions0-3.jpg', 'assets/EmpathyOG.png');

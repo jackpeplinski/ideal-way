@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		oGyPDo6TC89MQH/wWg+ZFvoQgAU=
+		I1c4buGGO8QCIIVC0JlihmxiSV0=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/assets/.DS_Store</key>
 		<data>
-		TfAPqNL3yLgubF2PfVECK+5I6gw=
+		3y++sUAKzaCQmjLBz2v0kvESHgc=
 		</data>
 		<key>flutter_assets/assets/ColorMatcherLv1.png</key>
 		<data>
@@ -232,6 +232,18 @@
 		<data>
 		wv2otjBawUu5vJprtfd1lAjaVvA=
 		</data>
+		<key>flutter_assets/assets/emotion1-6.png</key>
+		<data>
+		H7CwSGpv6q0BpLqg1VXXK/7P4wY=
+		</data>
+		<key>flutter_assets/assets/emotion1-7.png</key>
+		<data>
+		bbTehf0MDuQpISeoQuM/gyEhVWQ=
+		</data>
+		<key>flutter_assets/assets/emotion1-8.png</key>
+		<data>
+		2aj32R8NfThd9sqya70/gKwv4jY=
+		</data>
 		<key>flutter_assets/assets/emotions0-1.jpg</key>
 		<data>
 		62sRrHgXv0HDZdbAuLGrNXfogec=
@@ -276,6 +288,22 @@
 		<data>
 		zZE2StZFB6Dh3B6vM24ljqzcH/E=
 		</data>
+		<key>flutter_assets/assets/emotions3-5.png</key>
+		<data>
+		PZfX6IQatvPIisjhHAaZQkCoENM=
+		</data>
+		<key>flutter_assets/assets/emotions3-6.png</key>
+		<data>
+		mt6o8GdDfIeGdDtJYY73CISJkso=
+		</data>
+		<key>flutter_assets/assets/emotions3-7.png</key>
+		<data>
+		FRCef/bgBIW1reyaiySt7uDJSDs=
+		</data>
+		<key>flutter_assets/assets/emotions3-8.png</key>
+		<data>
+		OjpBMhFMCMyYIP9jUyfrWHyOjQ4=
+		</data>
 		<key>flutter_assets/assets/idealWay.png</key>
 		<data>
 		Ojozm/W9SVpGxy8isoFHB/Z27mc=
@@ -291,6 +319,10 @@
 		<key>flutter_assets/assets/kid3.jpg</key>
 		<data>
 		EzO+J5KduSpi29heSkAcq6li3Co=
+		</data>
+		<key>flutter_assets/assets/logoCutOut.png</key>
+		<data>
+		aCODWOlPV4jENXIzaeaD4SVND2E=
 		</data>
 		<key>flutter_assets/assets/trophy.png</key>
 		<data>
@@ -314,11 +346,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		X1AknFLk2Dcb0ONBg9OV5z4yqJY=
+		u6oRiUna09IwNxh9ogQ7SQsmtqg=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		MNJaV9p/TGADah9lCLryZ1s48Dc=
+		AKQUgabMb4tuiX3NDINCgUpqouk=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -330,7 +362,7 @@
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		IpUwMPZtGsA8VVA8XDH20ZFBZ+U=
+		MSKL7a6mIoE8cYjJqss94Gwqyxw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -339,11 +371,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oGyPDo6TC89MQH/wWg+ZFvoQgAU=
+			I1c4buGGO8QCIIVC0JlihmxiSV0=
 			</data>
 			<key>hash2</key>
 			<data>
-			cyaWDc6Yl3BX39K88WUmU6GOAiKzFI7of6003DCE470=
+			QyvUcb8HdYxN3rrDWwT/N4hlBdYmdbuFVQCYL6xpkmw=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -940,6 +972,39 @@
 			tj3ZDatHMMrUiywylfa1CJu/QP1E+g4OeZAGPiCEQ2Q=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/emotion1-6.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H7CwSGpv6q0BpLqg1VXXK/7P4wY=
+			</data>
+			<key>hash2</key>
+			<data>
+			fsTxoT6GVBef5NrCO/DarG4mo4Dm6+ZhRatZP6R/SNk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/emotion1-7.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bbTehf0MDuQpISeoQuM/gyEhVWQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			8PfQqwC7vviX9WmfcBFzMIgvLGSD5EKywys4dEr3v00=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/emotion1-8.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2aj32R8NfThd9sqya70/gKwv4jY=
+			</data>
+			<key>hash2</key>
+			<data>
+			BgHkeQi+OVYXkx87gFZuM17RDX7O2+pdGaDV9/4c0Ls=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/emotions0-1.jpg</key>
 		<dict>
 			<key>hash</key>
@@ -1061,6 +1126,50 @@
 			TbBj5NDqWMEHmbAH1v3dyRGznhMbpiMBbMBNpTZDwcU=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/emotions3-5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PZfX6IQatvPIisjhHAaZQkCoENM=
+			</data>
+			<key>hash2</key>
+			<data>
+			MRzKA5ASe76GGpheMa51ojyNjncNyEvFFvdHogLoPRk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/emotions3-6.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mt6o8GdDfIeGdDtJYY73CISJkso=
+			</data>
+			<key>hash2</key>
+			<data>
+			6bSRHG0IKhdYJOQcgIB8I45hJj8VHbQ+aDopN6QBtT0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/emotions3-7.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FRCef/bgBIW1reyaiySt7uDJSDs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y4P0T7VeD2bWN9jyQ5eQeFIlwNmaH6xcZ/g93af+TfQ=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/emotions3-8.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OjpBMhFMCMyYIP9jUyfrWHyOjQ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			gnkGITn73Wl7iybJEfArlf/dlMDXhcl4H2aGEzn0lN0=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/idealWay.png</key>
 		<dict>
 			<key>hash</key>
@@ -1103,6 +1212,17 @@
 			<key>hash2</key>
 			<data>
 			HL+aqXaKcgKj4tqxwMM9WzOZOUhpW33dKKkCi83+GZ4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/logoCutOut.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aCODWOlPV4jENXIzaeaD4SVND2E=
+			</data>
+			<key>hash2</key>
+			<data>
+			63iRVYmzHTclEQQY8aoA8F2/lwA+ZOkRdBkGgeR8ES4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/trophy.png</key>
@@ -1164,22 +1284,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X1AknFLk2Dcb0ONBg9OV5z4yqJY=
+			u6oRiUna09IwNxh9ogQ7SQsmtqg=
 			</data>
 			<key>hash2</key>
 			<data>
-			OimFnH5SJl9sYngRjK/7eAQlgLk1TlaiZUBj/hU0r7s=
+			vOVzIwrHntdScXGTsK3/4CD5y6y/1ka6TkHa7M/E0/4=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MNJaV9p/TGADah9lCLryZ1s48Dc=
+			AKQUgabMb4tuiX3NDINCgUpqouk=
 			</data>
 			<key>hash2</key>
 			<data>
-			HVFRc6SJ2fU+zkR7b7PcbnYeCcX1EHaFZFL2HzmoFio=
+			ryHhIUzjAiOwE1invGW6F0LPkeHEaiOw/BY4TtDZNbo=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -1208,11 +1328,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IpUwMPZtGsA8VVA8XDH20ZFBZ+U=
+			MSKL7a6mIoE8cYjJqss94Gwqyxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			tFO02a3ByM7NIRO6o34Hk7Yzo5Xg69nuwJCJ5spqnKs=
+			D0ldu/0v/pWVIoKCmtjJ+5b171Qm9kP0Upz4l5nu6SM=
 			</data>
 		</dict>
 	</dict>

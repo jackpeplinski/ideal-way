@@ -10,11 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Y4zhMky2HFhjf0vMdQMcA8w2LAU=
-		</data>
-		<key>Info.plist~master</key>
-		<data>
-		zCc1ph6Fp2M7O8FMOtHLIhzp4U4=
+		HTC6eNO70fmKYNA1L79WTpfiosU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -32,17 +28,6 @@
 			<key>hash2</key>
 			<data>
 			h9Q8dOdlbfVmyAwN0d7ym11XjgSop1/nJGh4JH8yc2c=
-			</data>
-		</dict>
-		<key>Info.plist~master</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zCc1ph6Fp2M7O8FMOtHLIhzp4U4=
-			</data>
-			<key>hash2</key>
-			<data>
-			cYB8UF/Hl8d94d5o4Sq3CpmBnSvFQmQhlgIRHhuVgIY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
