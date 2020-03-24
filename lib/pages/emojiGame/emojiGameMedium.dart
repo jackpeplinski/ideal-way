@@ -15,9 +15,9 @@ class _EmojiGameMedium1State extends State<EmojiGameMedium1> {
         context,
         'assets/emotion1-1.png',
         "Contempt",
-        "Anger",
-        "Surprise",
-        "Disgust",
+        "Angry",
+        "Surprised",
+        "Disgusted",
         3,
         IncorrectEmojiGameMedium1(),
         IncorrectEmojiGameMedium1(),
@@ -54,9 +54,9 @@ class _EmojiGameEasy2State extends State<EmojiGameEasy2> {
         context,
         'assets/emotion1-5.png',
         "Happy",
-        "Amusement",
+        "Amused",
         "Sad",
-        "Disgust",
+        "Disgusted",
         2,
         IncorrectEmojiGameMedium2(),
         EmojiGameMedium3(),
@@ -93,13 +93,13 @@ class _EmojiGameMedium3State extends State<EmojiGameMedium3> {
         context,
         'assets/emotion1-3.png',
         "Contempt",
-        "Anger",
-        "Surprise",
-        "Disgust",
+        "Angry",
+        "Surprised",
+        "Disgusted",
         3,
         IncorrectEmojiGameMedium3(),
-        IncorrectEmojiGameMedium3(),
         EmojiGameMedium4(),
+        IncorrectEmojiGameMedium3(),
         IncorrectEmojiGameMedium3());
   }
 }
@@ -115,7 +115,7 @@ class _IncorrectEmojiGameMedium3State extends State<IncorrectEmojiGameMedium3> {
   Widget build(BuildContext context) {
     //change incorrect message
     return incorrectAnswer(context, 'assets/emotion1-3.png',
-        "");
+        "When someone is ___, they tend to press their lips together tightly, and furrow their eyebrows. Also, they will tend to shift and raise their voice, becoming more aggressive and perhaps even yelling. ");
   }
 }
 
@@ -132,10 +132,10 @@ class _EmojiGameMedium4State extends State<EmojiGameMedium4> {
     return gameScreen(
         context,
         'assets/emotion1-4.png',
-        "Contempt",
-        "Anger",
-        "Surprise",
-        "Disgust",
+        "Anticipated",
+        "Amused",
+        "Happy",
+        "Surprised",
         3,
         IncorrectEmojiGameMedium4(),
         IncorrectEmojiGameMedium4(),
@@ -155,7 +155,7 @@ class _IncorrectEmojiGameMedium4State extends State<IncorrectEmojiGameMedium4> {
   Widget build(BuildContext context) {
     //change incorrect message
     return incorrectAnswer(context, 'assets/emotion1-4.png',
-        "");
+        "When someone is ___, you will tend to see the corners of their lips turn upwards. Being happy means being joyful.");
   }
 }
 
@@ -173,14 +173,14 @@ class _EmojiGameMedium5State extends State<EmojiGameMedium5> {
         context,
         'assets/emotion1-6.png',
         "Contempt",
-        "Anger",
-        "Surprise",
-        "Disgust",
+        "Tolerant",
+        "Surprised",
+        "Excited",
         3,
         IncorrectEmojiGameMedium5(),
         IncorrectEmojiGameMedium5(),
-        EmojiGameMedium6(),
-        IncorrectEmojiGameMedium5());
+        IncorrectEmojiGameMedium5(),
+        EmojiGameMedium6(),);
   }
 }
 
@@ -195,7 +195,7 @@ class _IncorrectEmojiGameMedium5State extends State<IncorrectEmojiGameMedium5> {
   Widget build(BuildContext context) {
     //change incorrect message
     return incorrectAnswer(context, 'assets/emotion1-6.png',
-        "");
+        "When someone is ___ their face lights up and they look engaged. They may smile as well.");
   }
 }
 
@@ -212,14 +212,14 @@ class _EmojiGameMedium6State extends State<EmojiGameMedium6> {
     return gameScreen(
         context,
         'assets/emotion1-7.png',
-        "Contempt",
-        "Anger",
-        "Surprise",
-        "Disgust",
+        "Nervous",
+        "Interested",
+        "Disgusted",
+        "Sad",
         3,
-        IncorrectEmojiGameMedium6(),
-        IncorrectEmojiGameMedium6(),
         EmojiGameMedium7(),
+        IncorrectEmojiGameMedium6(),
+        IncorrectEmojiGameMedium6(),
         IncorrectEmojiGameMedium6());
   }
 }
@@ -235,7 +235,7 @@ class _IncorrectEmojiGameMedium6State extends State<IncorrectEmojiGameMedium6> {
   Widget build(BuildContext context) {
     //change incorrect message
     return incorrectAnswer(context, 'assets/emotion1-7.png',
-        "");
+        "Someone is ___ when their facial expressions seem to all say different things (smiling, but raised eyebrows, etc.). This means they are mildly anxious or apprehensive");
   }
 }
 
@@ -252,14 +252,14 @@ class _EmojiGameMedium7State extends State<EmojiGameMedium7> {
     return gameScreen(
         context,
         'assets/emotion1-8.png',
-        "Contempt",
-        "Anger",
-        "Surprise",
-        "Disgust",
+        "No emotion",
+        "Bored",
+        "Satisfied",
+        "Annoyed",
         3,
         IncorrectEmojiGameMedium7(),
-        IncorrectEmojiGameMedium7(),
         EmojiGameMediumLast(),
+        IncorrectEmojiGameMedium7(),
         IncorrectEmojiGameMedium7());
   }
 }
@@ -275,7 +275,7 @@ class _IncorrectEmojiGameMedium7State extends State<IncorrectEmojiGameMedium7> {
   Widget build(BuildContext context) {
     //change incorrect message
     return incorrectAnswer(context, 'assets/emotion1-8.png',
-        "");
+        "Someone is ___ when their facial expressions are disinterested and disconnected.  ");
   }
 }
 
@@ -291,8 +291,8 @@ class _EmojiGameMediumLastState extends State<EmojiGameMediumLast> {
     return gameScreen(
       context,
       'assets/emotion1-2.png',
-      "Annoyance",
-      "Anger",
+      "Annoyed",
+      "Angry",
       "Contempt",
       "Sad",
       1,

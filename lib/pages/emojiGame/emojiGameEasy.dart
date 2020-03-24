@@ -16,8 +16,8 @@ class _EmojiGameEasy1State extends State<EmojiGameEasy1> {
         'assets/emotions0-1.jpg',
         "Sad",
         "Contempt",
-        "Disgust",
-        "Fear",
+        "Disgusted",
+        "Fearful",
         1,
         EmojiGameEasy2(),
         IncorrectEmojiGameEasy1(),
@@ -56,7 +56,7 @@ class _EmojiGameEasy2State extends State<EmojiGameEasy2> {
         "Angry",
         "Surprised",
         "Happy",
-        "Amusement",
+        "Amused",
         4,
         IncorrectEmojiGameEasy2(),
         IncorrectEmojiGameEasy2(),
@@ -94,7 +94,7 @@ class _EmojiGameEasy3State extends State<EmojiGameEasy3> {
         "Angry",
         "Surprised",
         "Happy",
-        "Amusement",
+        "Playful",
         4,
         IncorrectEmojiGameEasy3(),
         IncorrectEmojiGameEasy3(),
@@ -113,7 +113,7 @@ class _IncorrectEmojiGameEasy3State extends State<IncorrectEmojiGameEasy3> {
   @override
   Widget build(BuildContext context) {
     return incorrectAnswer(context, 'assets/emotions0-4.jpg',
-        "");
+        "When someone is acting ___, they may act silly, making hand motions or other irregular movements (ie. sticking out their tongue)");
   }
 }
 
@@ -129,15 +129,15 @@ class _EmojiGameEasy4State extends State<EmojiGameEasy4> {
     return gameScreen(
         context,
         'assets/emotions0-5.jpg',
+        "Bored",
+        "Interested",
+        "Scared",
         "Angry",
-        "Surprised",
-        "Happy",
-        "Amusement",
         4,
+        EmojiGameEasy5(),
         IncorrectEmojiGameEasy4(),
         IncorrectEmojiGameEasy4(),
-        IncorrectEmojiGameEasy4(),
-        EmojiGameEasy5());
+        IncorrectEmojiGameEasy4());
   }
 }
 
@@ -150,8 +150,8 @@ class IncorrectEmojiGameEasy4 extends StatefulWidget {
 class _IncorrectEmojiGameEasy4State extends State<IncorrectEmojiGameEasy4> {
   @override
   Widget build(BuildContext context) {
-    return incorrectAnswer(context, 'assets/emotions0-4.jpg',
-        "");
+    return incorrectAnswer(context, 'assets/emotions0-5.jpg',
+        "Someone is ___ when their facial expressions are disinterested and disconnected.");
   }
 }
 
@@ -167,15 +167,15 @@ class _EmojiGameEasy5State extends State<EmojiGameEasy5> {
     return gameScreen(
         context,
         'assets/emotions0-6.jpg',
-        "Angry",
+        "Disgusted",
+        "Playful",
         "Surprised",
         "Happy",
-        "Amusement",
         4,
         IncorrectEmojiGameEasy5(),
+        EmojiGameEasyLast(),
         IncorrectEmojiGameEasy5(),
-        IncorrectEmojiGameEasy5(),
-        EmojiGameEasyLast());
+        IncorrectEmojiGameEasy5(),);
   }
 }
 
@@ -189,7 +189,7 @@ class _IncorrectEmojiGameEasy5State extends State<IncorrectEmojiGameEasy5> {
   @override
   Widget build(BuildContext context) {
     return incorrectAnswer(context, 'assets/emotions0-6.jpg',
-        "");
+        "When someone is acting ____, they may act silly, making hand motions or other irregular movements");
   }
 }
 
@@ -206,8 +206,8 @@ class _EmojiGameEasyLastState extends State<EmojiGameEasyLast> {
       context,
       'assets/emotions0-3.jpg',
       "Surprised",
-      "Disgust",
-      "Fear",
+      "Disgusted",
+      "Fearful",
       "Happy",
       1,
       CorrectEmojiGameEasyLast(),

@@ -15,8 +15,8 @@ class _EmojiGameHard1State extends State<EmojiGameHard1> {
         context,
         'assets/emotions3-1.jpg',
         "Happy",
-        "Surprise",
-        "Amusement",
+        "Surprised",
+        "Amused",
         "Contempt",
         1,
         EmojiGameHard2(),
@@ -53,9 +53,9 @@ class _EmojiGameHard2State extends State<EmojiGameHard2> {
         context,
         'assets/emotions3-2.jpg',
         "Contempt",
-        "Surprise",
-        "Anger",
-        "Fear",
+        "Surprised",
+        "Angry",
+        "Fearful",
         4,
         IncorrectEmojiGame2(),
         IncorrectEmojiGame2(),
@@ -89,15 +89,15 @@ class _EmojiGameHard3State extends State<EmojiGameHard3> {
     return gameScreen(
         context,
         'assets/emotions3-5.png',
-        "Contempt",
-        "Surprise",
-        "Anger",
-        "Fear",
+        "Happy",
+        "Surprised",
+        "Neither",
+        "Fearful",
         4,
         IncorrectEmojiGame3(),
         IncorrectEmojiGame3(),
-        IncorrectEmojiGame3(),
-        EmojiGameHard4());
+        EmojiGameHard4(),
+        IncorrectEmojiGame3());
   }
 }
 
@@ -126,15 +126,15 @@ class _EmojiGameHard4State extends State<EmojiGameHard4> {
     return gameScreen(
         context,
         'assets/emotions3-6.png',
-        "Contempt",
-        "Surprise",
-        "Anger",
-        "Fear",
+        "Determined",
+        "Intrigued",
+        "Bored",
+        "Angry",
         4,
         IncorrectEmojiGame4(),
-        IncorrectEmojiGame4(),
-        IncorrectEmojiGame4(),
-        EmojiGameHard5());
+        IncorrectEmojiGame4(),  
+        EmojiGameHard5(),
+        IncorrectEmojiGame4());
   }
 }
 
@@ -147,7 +147,7 @@ class _IncorrectEmojiGame4State extends State<IncorrectEmojiGame4> {
   @override
   Widget build(BuildContext context) {
     return incorrectAnswer(context, 'assets/emotions3-6.png',
-        "");
+        "Someone is ___ when their facial expressions are disinterested and disconnected.  ");
   }
 }
 
@@ -163,15 +163,15 @@ class _EmojiGameHard5State extends State<EmojiGameHard5> {
     return gameScreen(
         context,
         'assets/emotions3-7.png',
-        "Contempt",
-        "Surprise",
-        "Anger",
-        "Fear",
+        "Happy",
+        "Fearful",
+        "Surprised",
+        "Sad",
         4,
         IncorrectEmojiGame5(),
+        EmojiGameHard6(),
         IncorrectEmojiGame5(),
-        IncorrectEmojiGame5(),
-        EmojiGameHard6());
+        IncorrectEmojiGame5());
   }
 }
 
@@ -184,7 +184,7 @@ class _IncorrectEmojiGame5State extends State<IncorrectEmojiGame5> {
   @override
   Widget build(BuildContext context) {
     return incorrectAnswer(context, 'assets/emotions3-7.png',
-        "");
+        "Characterized by widening the eyes and pulling back of the chin. People tend to be ___ when they believe someone or something is dangerous, likely to cause pain, or serve as a threat. It may also lead to rapid breathing and increased heartbeat.");
   }
 }
 
@@ -200,15 +200,15 @@ class _EmojiGameHard6State extends State<EmojiGameHard6> {
     return gameScreen(
         context,
         'assets/emotions3-8.png',
-        "Contempt",
-        "Surprise",
-        "Anger",
-        "Fear",
+        "Disgusted",
+        "Upset",
+        "Angry",
+        "Fearful",
         4,
+        EmojiGameHard7(),
         IncorrectEmojiGame6(),
         IncorrectEmojiGame6(),
-        IncorrectEmojiGame6(),
-        EmojiGameHard7());
+        IncorrectEmojiGame6());
   }
 }
 
@@ -236,16 +236,16 @@ class _EmojiGameHard7State extends State<EmojiGameHard7> {
   Widget build(BuildContext context) {
     return gameScreen(
         context,
-        'assets/emotions3-8.png',
+        'assets/emotions3-3.jpg',
+        "Sad",
         "Contempt",
-        "Surprise",
-        "Anger",
-        "Fear",
+        "Disgust",
+        "Fearfu;",
         4,
+        EmojiGameHardLast(),
         IncorrectEmojiGame7(),
         IncorrectEmojiGame7(),
-        IncorrectEmojiGame7(),
-        EmojiGameHardLast());
+        IncorrectEmojiGame7());
   }
 }
 
@@ -257,8 +257,8 @@ class IncorrectEmojiGame7 extends StatefulWidget {
 class _IncorrectEmojiGame7State extends State<IncorrectEmojiGame7> {
   @override
   Widget build(BuildContext context) {
-    return incorrectAnswer(context, 'assets/emotions3-8.png',
-        "");
+    return incorrectAnswer(context, 'assets/emotions3-3.jpg',
+        "When someone is ___, they tend to have a downward gaze with both lips as well as eyebrows turned downwards at the edges. ");
   }
 }
 
@@ -274,8 +274,8 @@ class _EmojiGameHardLastState extends State<EmojiGameHardLast> {
     return gameScreen(
       context,
       'assets/emotions3-4.jpg',
-      "Surprise",
-      "Amusement",
+      "Surprised",
+      "Amused",
       "Angry",
       "Happy",
       3,
