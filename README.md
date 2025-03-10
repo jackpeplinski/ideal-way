@@ -4,4 +4,6 @@ Hey! This is a mobile app developed during Western Engineering's first year desi
 
 The app helps develop elementary school students' understanding of disabilities.
 
+Checkout a video demo [here](https://www.youtube.com/watch?v=OdR4JiKwd08&ab_channel=JackPeplinski).
+
 Stack: Flutter
