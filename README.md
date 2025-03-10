@@ -1,16 +1,7 @@
-# ideal_way
+# Welcome!
 
-A new Flutter project.
+Hey! This is a mobile app developed during Western Engineering's first year design course ([Engineering Science 1050](https://www.westerncalendar.uwo.ca/Courses.cfm?CourseAcadCalendarID=MAIN_017916_1&SelectedCalendar=Live&ArchiveID=)) for London, Ontario based non-profit Ideal Way. 
 
-## Getting Started
+The app helps develop elementary school students' understanding of disabilities.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Stack: Flutter
